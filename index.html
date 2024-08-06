@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucas Provost</title>
+    <!-- CSS 초기화 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <!--Google Fonts - 나눔고딕-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Google Material Icons-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!--Lodash-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+      integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+      crossorigin="anonymous"
+    ></script>
+    <!--GSAP & ScrollToPlugin-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+      integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- 커스텀 CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <a href="/" class="logo">
+          <img src="images/logo.png" alt="logo" />
+        </a>
+        <ul class="main-menu">
+          <li><div class="menu-name">Project</div></li>
+          <li><div class="menu-name">Process</div></li>
+          <li><div class="menu-name">Packages</div></li>
+          <li><div class="menu-name">Contact</div></li>
+        </ul>
+      </div>
+      <div class="badges">
+        <div class="badge">Contact part</div>
+      </div>
+    </header>
+    <!-- VISUAL -->
+    <section class="visual">
+      <div class="inner">
+        <div class="title fade-in">
+          A <a>BRANDING</a><br />that speaks<br />for you
+        </div>
+        <div class="feature fade-in">
+          <div class="feature-box">Branding</div>
+          <div class="feature-box">Logo</div>
+          <div class="feature-box">Visual identity</div>
+        </div>
+        <div class="explain fade-in">
+          <!-- <p>
+            Create a project's visual identity to help you create a brand image
+            that your audience will remember.
+          </p> -->
+          <p>
+            I will accompany you in creating the visual identity of your project
+            <br />to create a brand image that your audience will remember.
+          </p>
+        </div>
+        <div class="btn-project fade-in">Recent Project</div>
+        <div class="person">
+          <img src="images/visual-person.jpg" alt="person" />
+        </div>
+      </div>
+    </section>
+    <!-- Project -->
+    <section class="project">
+      <div class="project-name">Project</div>
+      <!-- First slides -->
+      <div class="swiper up" dir="ltr">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="images/project-photo1.jpg" alt="project-photo1" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="images/project-photo2.jpg" alt="project-photo2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="images/project-photo3.jpg" alt="project-photo3" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="images/project-photo4.jpg" alt="project-photo4" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="images/project-photo5.jpg" alt="project-photo5" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="images/project-photo6.jpg" alt="project-photo6" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="images/project-photo7.jpg" alt="project-photo7" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="images/project-photo8.jpg" alt="project-photo8" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Second slides -->
+      <div class="swiper down" dir="rtl">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="images/project-photo4.jpg" alt="project-photo4" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="images/project-photo5.jpg" alt="project-photo5" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="images/project-photo6.jpg" alt="project-photo6" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="images/project-photo7.jpg" alt="project-photo7" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="images/project-photo8.jpg" alt="project-photo8" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="images/project-photo1.jpg" alt="project-photo1" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="images/project-photo2.jpg" alt="project-phot2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="images/project-photo3.jpg" alt="project-photo3" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="review-btn">Check Review</div>
+      </div> 
+    </section>
+    <!-- REVIEW -->
+    <section class="review hide">
+      <div class="inner">
+        <h2>+60 Clients Projects</h2>
+        <div class="content">
+          <ul>
+            <li>
+              <img src="images/review-photo1.jpg" alt="review-photo1">
+              <div class="contents-text">
+                <h4>Hyperbaric Revolution</h4>
+                <h6 class="name">Emilie Mika</h6>
+                <p>"From the moment we discovered Lucas' portfolio, we had a hunch that we had found the person to make an innovative logo and a graphic charter that catches the eye. We weren't mistaken, Lucas is a graphic designer who is talented, serious, attentive and very professional. The tools put in place to facilitate collaboration are efficient and simple to use, responsive and above all creative. We are extremely pleased with the result, thank you very much and the pleasure of working together again. We recommend 100%."</p>
+              </div>
+            </li>
+            <li>             
+              <div class="contents-text">
+                <h4>KI Leaders</h4>
+                <h6 class="name">Vincent Minaud</h6>
+                <p>"Working together has been both simple, quick and effective. Thank you, Lucas, for bringing us ideas beyond what we thought at first. Hopefully we'll have the opportunity to work together afterwards."</p>
+              </div>
+              <img src="images/review-photo2.jpg" alt="review-photo2">
+            </li>
+            <li>
+              <img src="images/review-photo3.jpg" alt="review-photo3">
+              <div class="contents-text">
+                <h4>Baobab Tour</h4>
+                <h6 class="name">Nadjmou B.</h6>
+                <p>"Lucas has been able to adapt to our project despite a rather special local context of the Indian Ocean. We are delighted with the result and emphasize its creativity and responsiveness. We recommend and renew our experience with him."</p>
+              </div>
+            </li>
+            <li>              
+              <div class="contents-text">
+                <h4>Pomecha</h4>
+                <h6 class="name">Louis, CEO Pomecha</h6>
+                <p>"Great experience with Lucas when creating the brand's visual identity. He has clearly identified the world of the company and has made graphic proposals and revisions to it. I am therefore satisfied and will be sure to use him again for other projects:")"</p>
+              </div>
+              <img src="images/review-photo4.jpg" alt="review-photo4">
+            </li>
+            <li>
+              <img src="images/review-photo5.jpg" alt="review-photo5">              
+              <div class="contents-text">
+                <h4>Daltec</h4>
+                <h6 class="name">Louis</h6>
+                <p>"Very good experience with Lucas, he is very attentive and understands your needs quickly. Besides, he's very responsive and efficient, I recommend!"</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- PROCESS -->
+     <section class="process">
+      <div class="inner">
+        <h2>Process</h2>
+        <div class="contents">
+          <ul>
+            <li>
+              <ul>         
+                <li>
+                  <h4 class="num" style="color:#994bfe" >01.</h4>
+                  <p class="contents-text">We set up an appointment to get to know each other, to discuss the project, your expectations and how I work for the success of the project.</p>
+                </li>
+                <li>
+                  <h4 class="num" style="color:#4bc8fe">02.</h4>
+                  <p class="contents-text">Before we begin, I invite you to the Project Area, a space that will allow us to centralize everything: presentations, returns, files and more. You don't have to get lost in e-mails, it's all in the same place.</p>
+                </li>
+                <li>
+                  <h4 class="num" style="color:#ff8200">03.</h4>
+                  <p class="contents-text">
+                    This is the most important step: the strategic call. For a short hour, we exchange information on everything that will allow us to take the right direction for your brand.<br><br>We will talk about the goals, values, competitors, vision and personality of the brand.
+                  </p>
+                </li>
+              </ul> 
+            </li>              
+            <li>
+              <ul>
+                <li>
+                  <h4 class="num" style="color:#ff8200">04.</h4>
+                  <p class="contents-text">
+                  I am now creating two moodboards that will allow us to define more precisely the creative direction to be followed for the entire brand.<br><br>Once validated, I move on to the logo and graphic design part. I'm working on the best solution(s) to meet your needs and I'll present it to you in a few days.
+                  </p>
+                </li>
+                <li>
+                  <h4 class="num" style="color:#994bfe">05.</h4>
+                  <p class="contents-text">I propose up to five revisions. Consequently, there is an exchange of views on possible adjustments.<br><br>When this step is complete, I will reveal your visual identity on all communication media</p>
+                </li>
+                <li>
+                  <h4 class="num" style="color:#4bc8fe">06.</h4>
+                  <p class="contents-text">Once the entire project is validated, you will be able to access all the files you need for the proper use of your branding.<br><br>Your brand is now ready to emerge from the nest with its new branding.</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+     </section>
+     <section class="package">
+      <div class="inner">
+        <h2>Packages</h2>
+        <ul>
+          <li class="item">
+            <h4 class="item-name">Graphical Chart</h4>
+            <ul>
+              <li><div class="text"><img src="images/cancel-icon.png" alt="cancel"></img><div>Branding Strategy and Creative Directorate</div></div></li>
+              <li><div class="text"><img src="images/check-icon.png" alt="check"></img><div>Logo (primary, secondary and icon)</div</li>
+              <li><div class="text"><img src="images/check-icon.png" alt="check"></img><div>Personalized Colour Palette</div></li>
+              <li><div class="text"><img src="images/check-icon.png" alt="check"></img><div>Typographies</div></li>
+              <li><div class="text"><img src="images/check-icon.png" alt="check"></img><div>Graphical Chart</li>
+              <li><div class="text"><img src="images/check-icon.png" alt="check"></img><div>Icons</li>
+              <li><div class="text"><img src="images/cancel-icon.png" alt="cancel"></img><div>Illustrations or graphical elements</div></li>
+              <li><div class="text"><img src="images/cancel-icon.png" alt="cancel"></img><div>Models posts social networks</div></li>
+              <li><div class="text"><img src="images/cancel-icon.png" alt="cancel"></img><div>Banner & profile photo social networks</div></li>
+              <li><div class="text"><img src="images/cancel-icon.png" alt="cancel"></img><div>Business card</div></li>
+            </ul>
+          </li>
+          <li class="item">
+            <h4 class="item-name">Full branding</h4>
+            <ul>
+              <li><div class="text"><img src="images/check-icon.png" alt="check"></img><div>Branding Strategy and Creative Directorate</div></div></li>
+              <li><div class="text"><img src="images/check-icon.png" alt="check"></img><div>Logo (primary, secondary and icon)</div</li>
+              <li><div class="text"><img src="images/check-icon.png" alt="check"></img><div>Personalized Colour Palette</div></li>
+              <li><div class="text"><img src="images/check-icon.png" alt="check"></img><div>Typographies</div></li>
+              <li><div class="text"><img src="images/check-icon.png" alt="check"></img><div>Graphical Chart</li>
+              <li><div class="text"><img src="images/check-icon.png" alt="check"></img><div>Icons</li>
+              <li><div class="text"><img src="images/check-icon.png" alt="check"></img><div>Illustrations or graphical elements</div></li>
+              <li><div class="text"><img src="images/check-icon.png" alt="check"></img><div>Models posts social networks</div></li>
+              <li><div class="text"><img src="images/check-icon.png" alt="check"></img><div>Banner & profile photo social networks</div></li>
+              <li><div class="text"><img src="images/check-icon.png" alt="check"></img><div>Business card</div></li>
+            </ul>
+          </li>
+          <li class="item">
+            <h4 class="item-name">Create your own package</h4>
+          </li>
+        </ul>
+      </div>
+     </section>
+    <!-- 커스텀 JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
