@@ -213,6 +213,7 @@ header .badges .badge {
   /* background-color: #4b4747; */
   height: 1000px;
   width: 100%;
+  overflow: hidden;
 }
 .project .project-name {
   position: absolute;
@@ -452,13 +453,17 @@ header .badges .badge {
 
 /* PACKAGE */
 .package {
+  /* position: relative; */
   width: 100%;
   height: 800px;
-  background-color: #dbdbdb;
+  background-color: rgb(241, 241, 237);
+  /* background-color: #111; */
+  z-index: -2;
 }
 .package .inner {
   height: inherit;
   width: 1200px;
+  z-index: 0;
 
   /* position: relative; */
 }
@@ -476,19 +481,79 @@ header .badges .badge {
 .package .inner > ul {
   position: absolute;
   top: 15%;
-  /* background-color: white; */
+  /* background-color: pink; */
+
   width: 100%;
   height: 80%;
   display: flex;
   justify-content: space-between;
 }
-.package .inner > ul .item {
+
+.package .inner > ul .item-container {
+  overflow: hidden;
+  position: relative;
   width: 32%;
-  background-color: white;
-  border-radius: 30px;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #4bc8fe; */
+  /* z-index: 0; */
 }
-.package .inner > ul .item:hover {
-  transform: scale(1.05);
+.package .inner > ul .item-container .item {
+  padding: 0 3%;
+  width: 90%;
+  height: 98%;
+  position: absolute;
+  border-radius: 30px;
+  background-color: WHITE;
+}
+/* .package .inner > ul .item {
+  position: relative;
+
+  padding: 0 1%;
+  background-color: white;
+  height: 100%;
+
+  border-radius: 30px;
+} */
+
+/* .package .inner > ul .item {
+  position: relative;
+
+  padding: 0 1%;
+  background-color: white;
+  height: 100%;
+
+  border-radius: 30px;
+} */
+
+.package .inner > ul .item-container::before {
+  position: absolute;
+  content: '';
+  z-index: 0;
+  top: -13%;
+  left: -45%;
+  width: 195%;
+  height: 125%;
+  border-radius: 36px;
+  background: linear-gradient(132deg, #cbeef7, #4bc8fe 60%, #34a2d1);
+  animation: spin 1.5s linear infinite;
+}
+.package .inner > ul .item-container:nth-child(2):before {
+  background: linear-gradient(132deg, #fdefb6, #f07b32 60%, #ff8200);
+}
+.package .inner > ul .item-container:nth-child(3):before {
+  background: linear-gradient(132deg, #eeb6ff, #ba37f1 60%, #9312a4);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .package .item .item-name {
   position: relative;
@@ -500,7 +565,7 @@ header .badges .badge {
   justify-content: center;
   align-items: center;
 }
-.package .item .item-name::after {
+.package .item-container .item-name::after {
   content: '';
   position: absolute;
   top: 100%;
@@ -508,20 +573,20 @@ header .badges .badge {
   height: 1.5px;
   background-color: #4bc8fe;
 }
-.package .item:nth-child(2) .item-name::after {
+.package .item-container:nth-child(2) .item-name::after {
   background-color: #ff8200;
 }
-.package .item:nth-child(3) .item-name::after {
+.package .item-container:nth-child(3) .item-name::after {
   background-color: #994bfe;
 }
-.package .item > ul {
-  /* padding: 0 5%; */
-  height: 60%;
+.package .item-container .item > ul {
+  position: absolute;
+  height: 55%;
   display: flex;
   flex-direction: column;
-  padding: 7% 6%;
+  padding: 7% 0;
   justify-content: space-between;
-  /* background-color: #4bc8fe; */
+  /* background-color: pink; */
 }
 .package .item > ul li {
   display: flex;
@@ -548,11 +613,116 @@ header .badges .badge {
   width: 20px;
   height: 20px;
 }
-.package .item:first-child > ul li:nth-child(1) div,
-.package .item:first-child > ul li:nth-child(7) div,
-.package .item:first-child > ul li:nth-child(8) div,
-.package .item:first-child > ul li:nth-child(9) div,
-.package .item:first-child > ul li:nth-child(10) div {
+
+.package .item-container .item .price-box {
+  position: absolute;
+  /* background-color: green; */
+  width: 94%;
+  height: 13%;
+  top: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.package .price-box .price {
+  /* background-color: #4bc8fe; */
+  font-size: 30px;
+  font-weight: 700;
+}
+.package-btn {
+  background-color: #4bc8fe;
+  padding: 0.7em 1.5em;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+}
+.package-btn.orange {
+  background-color: #ff8200;
+}
+.package-btn.purple {
+  background-color: #994bfe;
+}
+.package-btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: white;
+  color: black;
+  border: 1px solid #4bc8fe;
+}
+.package-btn.orange:hover {
+  border-color: #ff8200;
+}
+.package-btn.purple:hover {
+  border-color: #994bfe;
+}
+.package .item-container:first-child .text .cancel {
   /* background-color: pink; */
   color: #6666;
+}
+.package .third-package-text {
+  position: absolute;
+  padding: 5% 0;
+  height: 75%;
+  /* background-color: pink; */
+}
+.package .third-package-text .text-box {
+  /* background-color: red; */
+  margin-top: 2%;
+  display: flex;
+}
+.package .third-package-text .text-box .text {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0.7em;
+  margin-bottom: 3px;
+  border: 2px solid white;
+}
+.package .third-package-text .text-box .text:hover {
+  border-color: #994bfe;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.package .third-package-text .text-box .package-option.clicked {
+  background-color: #994bfe;
+  border-radius: 20px;
+}
+.package .third-package-text .text-box .text img {
+  width: 20px;
+  height: 20px;
+}
+.package .third-package-text .text-box .text p {
+  font-size: 16px;
+  height: 20px;
+  margin-left: 3px;
+}
+.package .third-package-text .estimate-price-box {
+  position: absolute;
+  margin-top: 2%;
+  /* background-color: pink; */
+  width: 100%;
+  height: 16%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.package .estimate-price-box .estimate-price {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+.package .estimate-price-box .estimate-price .text {
+  width: 180px;
+  /* background-color: #ff8200; */
+}
+.package .estimate-price-box .estimate-price .result {
+  font-size: 30px;
+  /* font-weight: 700; */
+  width: 120px;
+  /* background-color: pink; */
+  display: flex;
+  justify-content: center;
 }

@@ -83,3 +83,46 @@ reviewBtn.addEventListener('click', () => {
     reviewEl.classList.add('hide');
   }
 });
+
+// Create your own package calculation
+const priceTable = [
+  { price: 450, status: false },
+  { price: 320, status: false },
+  { price: 240, status: false },
+  { price: 410, status: false },
+  { price: 500, status: false },
+  { price: 150, status: false },
+  { price: 600, status: false },
+  { price: 200, status: false },
+  { price: 250, status: false },
+  { price: 430, status: false },
+  { price: 120, status: false },
+  { price: 450, status: false },
+  { price: 130, status: false },
+  { price: 470, status: false },
+  { price: 500, status: false },
+  { price: 370, status: false },
+  { price: 310, status: false },
+  { price: 480, status: false },
+];
+
+const packageOptionEls = document.querySelectorAll('.package .package-option');
+console.log(packageOptionEls);
+let packagePriceResult = 0;
+const priceResult = document.querySelector('.estimate-price-box .result');
+packageOptionEls.forEach((el, index) => {
+  el.addEventListener('click', () => {
+    priceTable[index].status = !priceTable[index].status;
+    console.log('statue', priceTable[index].status);
+    if (priceTable[index].status) {
+      packagePriceResult += priceTable[index].price;
+      console.log(packagePriceResult);
+      el.classList.add('clicked');
+    } else {
+      packagePriceResult -= priceTable[index].price;
+      console.log(packagePriceResult);
+      el.classList.remove('clicked');
+    }
+    priceResult.textContent = `${packagePriceResult}€`;
+  });
+});
