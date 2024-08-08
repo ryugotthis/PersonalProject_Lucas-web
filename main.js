@@ -126,3 +126,21 @@ packageOptionEls.forEach((el, index) => {
     priceResult.textContent = `${packagePriceResult}€`;
   });
 });
+
+// FAQ
+const questionEls = document.querySelectorAll('.faq .question');
+const answerEls = document.querySelectorAll('.faq .answer');
+const questionElsStatus = [false, false, false, false];
+questionEls.forEach((el, index) => {
+  el.addEventListener('click', () => {
+    questionElsStatus[index] = !questionElsStatus[index];
+    console.log('index', index);
+    if (questionElsStatus[index]) {
+      answerEls[index].classList.remove('hide');
+      el.classList.add('clicked');
+    } else {
+      answerEls[index].classList.add('hide');
+      el.classList.remove('clicked');
+    }
+  });
+});

@@ -26,7 +26,7 @@ a {
 
 /* HEADER */
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -499,6 +499,7 @@ header .badges .badge {
   align-items: center;
   /* background-color: #4bc8fe; */
   /* z-index: 0; */
+  box-shadow: 4px 4px 10px #6666669a;
 }
 .package .inner > ul .item-container .item {
   padding: 0 3%;
@@ -508,26 +509,6 @@ header .badges .badge {
   border-radius: 30px;
   background-color: WHITE;
 }
-/* .package .inner > ul .item {
-  position: relative;
-
-  padding: 0 1%;
-  background-color: white;
-  height: 100%;
-
-  border-radius: 30px;
-} */
-
-/* .package .inner > ul .item {
-  position: relative;
-
-  padding: 0 1%;
-  background-color: white;
-  height: 100%;
-
-  border-radius: 30px;
-} */
-
 .package .inner > ul .item-container::before {
   position: absolute;
   content: '';
@@ -538,7 +519,7 @@ header .badges .badge {
   height: 125%;
   border-radius: 36px;
   background: linear-gradient(132deg, #cbeef7, #4bc8fe 60%, #34a2d1);
-  animation: spin 1.5s linear infinite;
+  animation: spin 2.5s linear infinite;
 }
 .package .inner > ul .item-container:nth-child(2):before {
   background: linear-gradient(132deg, #fdefb6, #f07b32 60%, #ff8200);
@@ -666,6 +647,12 @@ header .badges .badge {
   height: 75%;
   /* background-color: pink; */
 }
+.package .third-package-text .subtitle {
+  /* background-color: pink; */
+  display: flex;
+  justify-content: center;
+  /* background-color: #4bc8fe; */
+}
 .package .third-package-text .text-box {
   /* background-color: red; */
   margin-top: 2%;
@@ -725,4 +712,187 @@ header .badges .badge {
   /* background-color: pink; */
   display: flex;
   justify-content: center;
+}
+
+/* FAQ */
+.faq {
+  /* width: 100%; */
+  /* position: relative; */
+  /* background-color: #4bc8fe; */
+  /* height: 0; */
+  padding-bottom: 4em;
+}
+.faq .inner {
+  /* height: 550px; */
+
+  /* background-color: #994bfe; */
+}
+.faq h2 {
+  position: relative;
+  padding: 1em 0;
+  /* width: 100%; */
+  font-size: 40px;
+  font-weight: 700;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #34a2d1; */
+
+  /* display: none; */
+}
+.faq h2::after {
+  content: '';
+  position: absolute;
+  top: 75%;
+  width: 10%;
+  height: 1.5px;
+  background-color: #f07b32;
+}
+.faq .faq-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  /* background-color: pink; */
+}
+.faq .faq-container .question-box {
+  /* background-color: pink; */
+  width: 700px;
+  /* height: 0; */
+  position: relative;
+}
+.faq .faq-container .question-box .question {
+  /* position: relative; */
+  padding: 1em 1em 1em 2.5em;
+
+  display: flex;
+  align-items: center;
+  border: 3px solid grey;
+  border-radius: 10px;
+  margin-bottom: 0.5em;
+  /* background-color: pink; */
+}
+.faq .faq-container .question:hover {
+  cursor: pointer;
+  border-color: black;
+}
+.faq .faq-container .question.clicked {
+  border-color: black;
+}
+.faq .faq-container .question .text {
+  font-size: 20px;
+  font-weight: 700;
+  flex-grow: 1;
+}
+.faq .faq-container .question .material-icons {
+  font-size: 40px;
+  margin-right: 0.2em;
+  color: #4bc8fe;
+}
+.faq .faq-container .answer {
+  position: relative;
+  /* display: none; */
+  /* width: 700px; */
+  /* background-color: rgb(201, 187, 187); */
+  color: grey;
+  padding: 0.5em 1.5em 1.5em 1.5em;
+  line-height: 1.3em;
+  /* height: 0; */
+  overflow: hidden;
+  /* opacity: 1; */
+  /* transition: opacity 0.4s; */
+}
+.faq .faq-container .answer span {
+  font-weight: 700;
+  color: black;
+}
+.faq .faq-container .answer.hide {
+  height: 0;
+  padding: 0;
+  /* opacity: 0; */
+}
+
+/* FOOTER */
+footer {
+  background-color: #111111;
+}
+footer img {
+  width: 20px;
+  height: 20px;
+}
+footer .inner {
+  /* height: 200px; */
+  padding: 2em 0;
+}
+footer .info {
+  /* position: absolute; */
+  /* background-color: pink; */
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: white;
+  /* font-weight: 400; */
+}
+footer .left .logo-name {
+  display: flex;
+  align-items: center;
+  /* font-size: 18px; */
+  /* background-color: yellowgreen; */
+  /* left: -1.5em; */
+}
+footer .left .logo-name img {
+  filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(216deg)
+    brightness(103%) contrast(101%);
+  width: 30px;
+  height: 30px;
+}
+footer .left .time {
+  /* margin: 0.5em; */
+  display: flex;
+  align-items: center;
+
+  /* background-color: pink; */
+}
+footer .left .time .material-icons {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.4em;
+}
+footer .right .link1 {
+  display: flex;
+  justify-content: center;
+}
+footer .right .link1 a {
+  margin-right: 1em;
+}
+/* footer .right .link2 {
+  background-color: greenyellow;
+  height: 60px;
+} */
+
+footer .right .link2 .email {
+  color: white;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+footer .right .link2 .phone {
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+footer .copyright {
+  /* color: white; */
+  /* background-color: greenyellow; */
+  display: block;
+  margin-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* font-weight: 400; */
 }
