@@ -450,25 +450,31 @@ header .badges .badge {
   height: 43vw;
 }
 .process .inner {
-  /* height: 100%; */
+  height: 100%;
   /* background-color: #ff8200; */
-  height: inherit;
+  /* height: inherit; */
+  display: flex;
+  flex-direction: column;
 }
 .process h2 {
   position: absolute;
+  position: relative;
   /* font-size: 40px; */
   font-size: 2.77vw;
   font-weight: 700;
   /* background-color: #4bc8fe; */
   width: 100%;
+  height: 20%;
   display: flex;
   justify-content: center;
-  top: 5%;
+  align-items: center;
+  /* top: 5%; */
   /* height: 2rem; */
 }
 .process .contents {
   position: absolute;
-  top: 20%;
+  position: relative;
+  /* top: 40%; */
   width: 100%;
   height: 70%;
   /* margin-top: 5%; */
@@ -493,7 +499,7 @@ header .badges .badge {
 }
 .process .contents > ul > li ul li .num {
   /* display: block; */
-  font-size: 35px;
+  /* font-size: 35px; */
   font-size: 2.43vw;
   font-weight: 700;
   /* background-color: pink; */
@@ -503,6 +509,7 @@ header .badges .badge {
 .process .contents > ul > li ul li p {
   font-size: 1.11vw;
   line-height: 1.2em;
+  line-height: 1.332vw;
 }
 
 /* PACKAGE */
@@ -528,7 +535,7 @@ header .badges .badge {
   font-size: 2.77vw;
   font-weight: 700;
   /* background-color: pink; */
-  position: absolute;
+  position: relative;
   display: flex;
   width: 100%;
   height: 15%;
@@ -953,6 +960,7 @@ footer .inner {
   /* background-color: pink; */
   /* padding: 2em 0; */
   padding: 2.5vw 0;
+  /* width: 90%; */
 }
 footer .info {
   /* position: absolute; */
@@ -1007,7 +1015,7 @@ footer .right .link1 a {
 
 footer .right .link2 .email {
   color: white;
-  height: 30px;
+  /* height: 30px; */
   height: 2vw;
   display: flex;
   align-items: center;
