@@ -200,15 +200,12 @@ header .badges .badge {
   /* display: none; */
 }
 .project .project-name {
-  width: 100%;
-  /* width: 30%; */
   height: 15%;
   font-size: 2.77vw;
   font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: pink;
 }
 .project .swiper {
   position: relative;
@@ -257,16 +254,19 @@ header .badges .badge {
 .project .swiper .swiper-wrapper .swiper-slide:hover a img {
   transform: scale(1.2);
 }
+.project .review-btn-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .project .review-btn {
-  position: relative;
-  width: 10%;
   margin-top: 2vw;
   padding: 1em 2em;
   font-size: 1.388vw;
   border: 3px solid #ff8200;
   border-radius: 2em;
-  left: 50%;
-  margin-left: calc(10% / -2);
+  /* left: 50%;
+  margin-left: calc(10% / -2); */
   display: flex;
   justify-content: center;
   background-color: #ff8200;
