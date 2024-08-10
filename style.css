@@ -47,6 +47,7 @@ header .logo {
   top: 0;
   bottom: 0;
   left: 0;
+  left: -3.85vw;
   margin: auto;
   /* background-color: greenyellow; */
   /* height: 100px; */
@@ -73,6 +74,7 @@ header ul.main-menu {
 header ul.main-menu li {
   padding: 12px 25px;
   padding: 0.75em 1.56em;
+  padding: 0.83vw 1.73vw;
   /* background-color: #4bc8fe; */
 }
 header ul.main-menu li:hover {
@@ -90,14 +92,17 @@ header ul.main-menu li:hover .menu-name {
 }
 header .badges {
   position: fixed;
-  top: 2vw;
-  right: 2vw;
+  top: 20vw;
+  right: 2.5vw;
 }
 header .badges .badge {
   width: 100px;
-  height: 200px;
+  width: 6.94vw;
+  height: 120px;
+  height: 8.33vw;
   background-color: aqua;
   border-radius: 10px;
+  border-radius: 0.62em;
 }
 
 /* VISUAL */
@@ -558,6 +563,7 @@ header .badges .badge {
   position: relative;
   width: 32%;
   border-radius: 35px;
+  border-radius: 2.18em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -950,8 +956,8 @@ footer {
   background-color: #111111;
 }
 footer img {
-  width: 20px;
-  height: 20px;
+  /* width: 20px;
+  height: 20px; */
   width: 1.388vw;
   height: 1.388vw;
 }
@@ -983,8 +989,8 @@ footer .left .logo-name {
 footer .left .logo-name img {
   filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(216deg)
     brightness(103%) contrast(101%);
-  width: 30px;
-  height: 30px;
+  /* width: 30px;
+  height: 30px; */
   width: 2vw;
   height: 2vw;
 }
@@ -1021,7 +1027,7 @@ footer .right .link2 .email {
   align-items: center;
 }
 footer .right .link2 .phone {
-  height: 20px;
+  /* height: 20px; */
   height: 1.388vw;
   display: flex;
   align-items: center;
