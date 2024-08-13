@@ -945,7 +945,9 @@ footer .copyright {
 }
 
 @media screen and (max-width: 768px) {
+  /* HEADER */
   header .inner {
+    padding-top: 4vw;
     /* width: 95%; */
     height: 56px;
 
@@ -963,13 +965,15 @@ footer .copyright {
     height: 14px;
     bottom: 1.5em;
   }
-  header ul.main-menu li {
-    /* padding: 0 0.2em; */
-  }
   header ul.main-menu li .menu-name {
     font-size: 14px;
     margin-right: 0.2em;
     font-weight: 700;
     /* padding: ; */
+  }
+
+  /* VISUAL */
+  .visual {
+    height: 400px;
   }
 }
