@@ -980,13 +980,25 @@ footer .copyright {
     margin: 0 0.5em;
     font-weight: 700;
   }
+  header .badges {
+    right: 3vw;
+    /* background-color: pink; */
+    border-radius: 1.5vw;
+    width: 11vw;
+    height: 14vw;
+  }
+  header .badges .material-icons {
+    font-size: 8vw;
+  }
+  header .badges .badge {
+    font-size: 2.5vw;
+  }
 
   /* VISUAL */
   .visual {
     height: 400px;
     height: 106.6vw;
   }
-
   .visual .title.mobile {
     display: block;
     position: absolute;
