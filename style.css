@@ -1032,11 +1032,34 @@ footer .copyright {
     justify-content: center;
     align-items: center;
   }
+  .visual .person {
+    position: absolute;
+    right: 0vw;
+    top: 37vw;
+    font-size: 1.11vw;
+    border-radius: 7vw;
+    width: 35vw;
+    height: 35vw;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 30);
+    /* display: none; */
+  }
   .visual .explain {
     position: absolute;
-    top: 26.2vw;
-    left: -3.47vw;
-    display: none;
+    top: 80vw;
+    left: -12vw;
+    margin-left: 5vw;
+    width: 90vw;
+    /* background-color: #9312a4; */
+    display: flex;
+    justify-content: center;
+    /* display: none; */
+  }
+  .visual .explain p {
+    font-size: 13px;
+    font-size: 3.46vw;
+    font-size: 3.05vw;
+    line-height: 1.2em;
   }
   .visual .btn-project {
     position: absolute;
@@ -1049,17 +1072,5 @@ footer .copyright {
     font-family: 'sk-modern-bold';
     font-size: 1.388vw;
     display: none;
-  }
-  .visual .person {
-    position: absolute;
-    right: 0vw;
-    top: 37vw;
-    font-size: 1.11vw;
-    border-radius: 7vw;
-    width: 35vw;
-    height: 35vw;
-    overflow: hidden;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 30);
-    /* display: none; */
   }
 }
