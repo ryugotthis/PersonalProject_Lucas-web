@@ -982,11 +982,11 @@ footer .copyright {
     position: absolute;
     top: 50px;
     left: 0;
-    font-size: 6vw;
+    font-size: 6.5vw;
     font-family: 'sk-modern-bold';
   }
   .visual .title a {
-    font-size: 7vw;
+    font-size: 7.5vw;
   }
   .visual .feature {
     position: absolute;
@@ -1012,5 +1012,17 @@ footer .copyright {
     font-family: 'sk-modern-bold';
     font-size: 1.388vw;
     display: none;
+  }
+  .visual .person {
+    position: absolute;
+    right: 0vw;
+    top: 12vw;
+    font-size: 1.11vw;
+    border-radius: 2.5em;
+    width: 25vw;
+    height: 25vw;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 30);
+    /* display: none; */
   }
 }
