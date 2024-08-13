@@ -1066,6 +1066,7 @@ footer .copyright {
   }
   .project .project-name {
     font-family: 'sk-modern-bold';
+    font-weight: 400;
     position: relative;
     font-size: 25px;
   }
