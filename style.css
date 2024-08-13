@@ -971,12 +971,12 @@ footer .copyright {
     /* background-color: pink; */
     position: relative;
     position: static;
-    height: 14px;
-    bottom: 0;
+    /* height: 14px; */
+    /* bottom: 0; */
   }
   header ul.main-menu li .menu-name {
     font-size: 14px;
-    margin-right: 0.2em;
+    margin: 0 0.5em;
     font-weight: 700;
     /* padding: ; */
   }
