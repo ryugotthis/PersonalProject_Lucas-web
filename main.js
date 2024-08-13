@@ -30,7 +30,7 @@ const swiper = new Swiper('.project .swiper', {
   loop: true, // 반복재생여부
 
   breakpoints: {
-    768: {
+    769: {
       //768px보다 클경우
       slidesPerView: 3, // 한번에 보여줄 슬라이드 개수
       spaceBetween: 10, // 슬라이드 사이 여백
