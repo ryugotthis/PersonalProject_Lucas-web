@@ -1073,15 +1073,15 @@ footer .copyright {
     right: 0;
 
     margin: 0 auto;
-    width: 340px;
+    width: 380px;
     /* width: calc(43vw * 3 + 1.388vw); */
 
     /* left: 50%; */
     /* margin-left: calc((620px * 3 + 20px) / -2); */
     /* margin-left: calc((43vw * 3 + 1.388vw) / -2); */
     /* height: 345px; */
-    height: 179px;
-    /* background-color: pink; */
+    height: 211px;
+    background-color: pink;
   }
   .project .swiper.down {
     margin-top: 1.5vw;
@@ -1102,8 +1102,8 @@ footer .copyright {
     justify-content: center;
     align-items: center;
     /* width: 620px; */
-    width: 340px;
+    width: 380px;
     /* height: 345px; */
-    height: 179px;
+    height: 211px;
   }
 }
