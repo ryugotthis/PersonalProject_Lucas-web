@@ -24,18 +24,29 @@ fadeEls.forEach((fadeEl, index) => {
 // });
 
 const swiper = new Swiper('.project .swiper', {
-  // direction: 'horizental' 기본값이라 생략
-  slidesPerView: 3, // 한번에 보여줄 슬라이드 개수
-  spaceBetween: 10, // 슬라이드 사이 여백
-  centeredSlides: true, // 1번 슬라이드가 가운데 보이기
-  loop: true, //반복재생여부
-  autoplay: {
-    delay: 0,
-    stopOnLastSlide: false,
-    disableOnInteraction: true,
-    pauseOnMouseEnter: true,
+  slidesPerView: 1, // 한번에 보여줄 슬라이드 개수
+  spaceBetween: 10,
+  autoplay: true, // 자동재생
+  loop: true, // 반복재생여부
+
+  breakpoints: {
+    768: {
+      //768px보다 클경우
+      slidesPerView: 3, // 한번에 보여줄 슬라이드 개수
+      spaceBetween: 10, // 슬라이드 사이 여백
+      centeredSlides: true, // 1번 슬라이드가 가운데 보이기
+      loop: true, //반복재생여부
+      autoplay: {
+        delay: 0,
+        stopOnLastSlide: false,
+        disableOnInteraction: true,
+        pauseOnMouseEnter: true,
+      },
+      speed: 4000,
+    },
   },
-  speed: 4000,
+  // direction: 'horizental' 기본값이라 생략
+
   //
 });
 
