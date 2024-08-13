@@ -1065,6 +1065,14 @@ footer .copyright {
     /* background-color: #34a2d1; */
   }
   .project .project-name {
+    position: relative;
+    font-size: 25px;
+  }
+  .project .project-name::after {
+    position: absolute;
+    content: 'click to discover the full projects';
+    top: 70%;
+    font-weight: 400;
     font-size: 16px;
   }
   .project .swiper {
