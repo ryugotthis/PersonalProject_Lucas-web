@@ -144,3 +144,89 @@ questionEls.forEach((el, index) => {
     }
   });
 });
+
+const menuProject = document.getElementById('menuProject');
+const menuProcess = document.getElementById('menuProcess');
+const menuPackage = document.getElementById('menuPackage');
+const menuContact = document.getElementById('menuContact');
+const recentProjectBtn = document.getElementById('recentProjectBtn');
+const projectEl = document.querySelector('.project');
+const processEl = document.querySelector('.process');
+const packageEl = document.querySelector('.package');
+const contactEl = document.querySelector('.contact');
+menuProject.addEventListener('click', () => {
+  gsap.to(window, 0.7, {
+    scrollTo: window.pageYOffset + projectEl.getBoundingClientRect().top,
+  });
+});
+menuProcess.addEventListener('click', () => {
+  gsap.to(window, 0.7, {
+    scrollTo: window.pageYOffset + processEl.getBoundingClientRect().top,
+  });
+});
+menuPackage.addEventListener('click', () => {
+  gsap.to(window, 0.7, {
+    scrollTo: window.pageYOffset + packageEl.getBoundingClientRect().top,
+  });
+});
+menuContact.addEventListener('click', () => {
+  gsap.to(window, 0.7, {
+    scrollTo: window.pageYOffset + contactEl.getBoundingClientRect().top,
+  });
+});
+recentProjectBtn.addEventListener('click', () => {
+  gsap.to(window, 0.7, {
+    scrollTo: window.pageYOffset + projectEl.getBoundingClientRect().top,
+  });
+});
+
+// // badge % to top
+const badgeEl = document.querySelector('.badges');
+const totopEl = document.getElementById('to-top');
+console.log('totop', totopEl);
+// const projectEl = document.querySelector('.project');
+const faqEl = document.querySelector('.faq');
+console.log(window.pageYOffset + contactEl.getBoundingClientRect().top);
+window.addEventListener(
+  'scroll',
+  _.throttle(() => {
+    if (
+      window.scrollY >
+      window.pageYOffset + projectEl.getBoundingClientRect().top
+    ) {
+      gsap.to(totopEl, 0.6, {
+        opacity: 1,
+      });
+    } else {
+      gsap.to(totopEl, 0.6, {
+        opacity: 0,
+      });
+    }
+
+    if (
+      window.scrollY <
+      window.pageYOffset + faqEl.getBoundingClientRect().top
+    ) {
+      gsap.to(badgeEl, 0.6, {
+        opacity: 1,
+      });
+    } else {
+      gsap.to(badgeEl, 0.6, {
+        opacity: 0,
+      });
+    }
+    badgeEl.addEventListener('click', () => {
+      // 페이지 위치를 최상단으로 부드럽게(0.7초 동안) 이동.
+      gsap.to(window, 0.7, {
+        scrollTo: window.pageYOffset + contactEl.getBoundingClientRect().top,
+      });
+    });
+
+    totopEl.addEventListener('click', () => {
+      // 페이지 위치를 최상단으로 부드럽게(0.7초 동안) 이동.
+      gsap.to(window, 0.7, {
+        scrollTo: 0,
+      });
+    });
+  })
+);

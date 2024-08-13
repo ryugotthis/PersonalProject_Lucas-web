@@ -1,7 +1,6 @@
 /* COMMON */
 
 body {
-  /* height: 2000px; */
   font-family: 'sk-modern';
 }
 img {
@@ -27,8 +26,7 @@ a {
 
 /* HEADER */
 header {
-  display: none;
-  width: 100vw;
+  width: 100%;
   background-color: #111111;
 }
 header .inner {
@@ -43,7 +41,6 @@ header .logo {
   bottom: 0;
   left: -3.85vw;
   margin: auto;
-  background-color: greenyellow;
   height: 6.877vw;
   width: 6.877vw;
 }
@@ -76,16 +73,33 @@ header ul.main-menu li:hover .menu-name {
 header .badges {
   position: fixed;
   top: 20vw;
-  right: 2.5vw;
+  right: 1.5vw;
+  width: 5.5vw;
+  height: 7vw;
+  background-color: #111;
+  border-radius: 0.69vw;
+  /* border-radius: 0.62em; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+  /* border: 2px solid #ff8200; */
+  /* display: none; */
+  transition: scale 0.7;
+}
+header .badges:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+header .badges .material-icons {
+  font-size: 3.47vw;
+  color: #ff8200;
+  /* background-color: green; */
 }
 header .badges .badge {
-  width: 100px;
-  width: 6.94vw;
-  height: 120px;
-  height: 8.33vw;
-  background-color: aqua;
-  border-radius: 10px;
-  border-radius: 0.62em;
+  color: #ff8200;
+  font-size: 1.11vw;
 }
 
 /* VISUAL */
@@ -195,7 +209,8 @@ header .badges .badge {
 .project {
   background-color: rgb(255, 254, 244);
   height: 68.7vw;
-  width: 100vw;
+  width: 100%;
+  /* 100vw하면 가로가 더 길어짐 */
   overflow: hidden;
   /* display: none; */
 }
@@ -211,6 +226,7 @@ header .badges .badge {
   position: relative;
   /* width: calc(620px * 3 + 20px); */
   width: calc(43vw * 3 + 1.388vw);
+
   left: 50%;
   /* margin-left: calc((620px * 3 + 20px) / -2); */
   margin-left: calc((43vw * 3 + 1.388vw) / -2);
@@ -770,6 +786,82 @@ header .badges .badge {
   padding: 0;
 }
 
+/* CONTACT */
+.contact {
+  background-color: rgb(241, 241, 237);
+  padding: 3vw 0;
+  width: 100%;
+  /* display: none; */
+}
+
+.contact h2 {
+  position: relative;
+  font-size: 2.77vw;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact h2::after {
+  content: '';
+  position: absolute;
+  top: 150%;
+  width: 10%;
+  height: 1.5px;
+  background-color: #4bc8fe;
+}
+.contact .contact-box {
+  height: 34.7vw;
+  padding: 5vw 0 3vw 0;
+  box-sizing: border-box;
+  position: relative;
+  /* top: 5vw; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: pink; */
+}
+.contact .contact-box input {
+  font-size: 1.25vw;
+  display: block;
+  border-radius: 0.69vw;
+  outline: none;
+  border: 1px solid #111111;
+  padding-left: 1em;
+  box-sizing: border-box;
+  width: 90%;
+  height: 15%;
+  color: #333;
+  /* background-color: gray; */
+}
+.contact .contact-box .message {
+  font-size: 1.25vw;
+  color: #333;
+  /* font-weight: 700; */
+  display: block;
+  border-radius: 0.69vw;
+  outline: none;
+  border: 1px solid #111111;
+  padding: 0.5em 1em;
+  box-sizing: border-box;
+  width: 90%;
+  height: 50%;
+}
+.contact .contact-btn-box .contact-btn {
+  border: none;
+  padding: 0.7em 2em;
+  font-size: 18px;
+  font-size: 1.25vw;
+  border-radius: 40px;
+  border-radius: 2.7vw;
+  background-color: #111;
+  color: white;
+}
+.contact .contact-btn-box .contact-btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
 /* FOOTER */
 footer {
   background-color: #111111;
@@ -829,4 +921,25 @@ footer .copyright {
   margin-bottom: 0.5em;
   display: flex;
   align-items: center;
+}
+
+/* TO Top BUTTON */
+#to-top {
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  z-index: 9;
+  width: 2.9vw;
+  height: 2.9vw;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 0.69vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#to-top .material-icons {
+  font-size: 2vw;
 }

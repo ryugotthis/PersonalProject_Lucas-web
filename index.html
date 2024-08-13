@@ -55,6 +55,18 @@
     />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- email -->
+    <script src="emial.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init({
+          publicKey: "INudCyFguDeLY82Ie",
+        });
+      })();
+    </script>
     <!-- 커스텀 CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -65,14 +77,14 @@
           <img src="images/logo.png" alt="logo" />
         </a>
         <ul class="main-menu">
-          <li><div class="menu-name">Project</div></li>
-          <li><div class="menu-name">Process</div></li>
-          <li><div class="menu-name">Packages</div></li>
-          <li><div class="menu-name">Contact</div></li>
+          <li><div class="menu-name" id="menuProject">Project</div></li>
+          <li><div class="menu-name" id="menuProcess">Process</div></li>
+          <li><div class="menu-name" id="menuPackage">Packages</div></li>
+          <li><div class="menu-name" id="menuContact">Contact</div></li>
         </ul>
       </div>
       <div class="badges">
-        <div class="badge">Contact part</div>
+        <div class="material-icons">mail</div><div class="badge">Contact</div>
       </div>
     </header>
     <!-- VISUAL -->
@@ -87,16 +99,12 @@
           <div class="feature-box">Visual identity</div>
         </div>
         <div class="explain fade-in">
-          <!-- <p>
-            Create a project's visual identity to help you create a brand image
-            that your audience will remember.
-          </p> -->
           <p>
             I will accompany you in creating the visual identity of your project
             <br />to create a brand image that your audience will remember.
           </p>
         </div>
-        <div class="btn-project fade-in">Recent Project</div>
+        <div class="btn-project fade-in" id="recentProjectBtn">Recent Project</div>
         <div class="person">
           <img src="images/visual-person.jpg" alt="person" />
         </div>
@@ -104,7 +112,7 @@
     </section>
     <!-- Project -->
     <section class="project">
-      <div class="project-name">Project</div>
+      <div class="project-name" >Project</div>
       <!-- First slides -->
       <div class="swiper up" dir="ltr">
         <div class="swiper-wrapper">
@@ -445,6 +453,20 @@
           </ul>
         </div>
       </section>
+      <!-- contact -->
+      <section class="contact">       
+        <div class="inner">
+          <h2>Contact Me</h2>
+          <div class="contact-box" id="contactBox">
+            <input type="text" class="name" id="name" placeholder="*Your name"></input>
+            <input type="email" class="email" id="email" placeholder="*Your email"></input>
+            <textarea type="text" class="message" id="message" placeholder="*message"></textarea>
+            <div class="contact-btn-box" name="submit" id="btn" onclick="sendMail()">
+              <button class="contact-btn">submit</button>
+            </div>   
+          </div>   
+        </div>
+      </section>
       <footer>
         <div class="inner">
           <ul class="info">
@@ -475,7 +497,12 @@
           </ul>
         </div>
       </footer>
+      <!--TO TOP BUTTON-->
+      <div id="to-top">
+        <div class="material-icons">arrow_upward</div>
+      </div>
     <!-- 커스텀 JS -->
     <script src="main.js"></script>
+    <!-- <script src="emial.js"></script> -->
   </body>
 </html>
