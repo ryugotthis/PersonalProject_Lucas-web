@@ -1063,14 +1063,18 @@ footer .copyright {
   }
   .visual .btn-project {
     position: absolute;
-    top: 32.3vw;
-    left: -3.47vw;
-    color: #111111;
-    background-color: #dbdbdb;
+    top: 90vw;
+
     padding: 1em 1.5em;
     border-radius: 2.5em;
     font-family: 'sk-modern-bold';
-    font-size: 1.388vw;
-    display: none;
+    font-size: 14px;
+    font-size: 3.5vw;
+    left: -12vw;
+    left: 38vw;
+    /* margin-left: 50vw + 17vw; */
+    margin-left: -17vw;
+
+    /* display: none; */
   }
 }
