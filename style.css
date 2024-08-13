@@ -981,6 +981,7 @@ footer .copyright {
     font-weight: 700;
   }
   header .badges {
+    top: 60vh;
     right: 3vw;
     /* background-color: pink; */
     border-radius: 1.5vw;
