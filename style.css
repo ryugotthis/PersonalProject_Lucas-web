@@ -994,9 +994,9 @@ footer .copyright {
     /* left: 0; */
     left: 0;
     right: 0;
-    width: 80%;
+    width: 88%;
     margin: 0 auto;
-    font-size: 6.5vw;
+    font-size: 7.5vw;
     font-family: 'sk-modern-bold';
     /* background-color: pink; */
   }
@@ -1004,7 +1004,7 @@ footer .copyright {
     display: none;
   }
   .visual .title a {
-    font-size: 7.5vw;
+    font-size: 8.5vw;
   }
   .visual .feature {
     position: absolute;
