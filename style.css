@@ -1061,7 +1061,7 @@ footer .copyright {
 
   /* PROJECT */
   .project {
-    height: 550px;
+    height: 600px;
     /* background-color: #34a2d1; */
   }
   .project .project-name {
@@ -1069,6 +1069,7 @@ footer .copyright {
     font-weight: 400;
     position: relative;
     font-size: 25px;
+    height: 20%;
   }
   .project .project-name::after {
     position: absolute;
