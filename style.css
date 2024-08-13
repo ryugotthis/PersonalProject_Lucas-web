@@ -330,7 +330,6 @@ header .badges .badge {
   /* height: 0; */
   /* display: block; */
   color: #dbdbdb;
-  position: absolute;
   position: relative;
   height: 12%;
   width: 100%;
@@ -1147,5 +1146,64 @@ footer .copyright {
     font-weight: 400;
     font-family: 'sk-modern-bold';
     color: rgb(255, 254, 244);
+  }
+
+  /* REVIEW */
+  .review .inner {
+    height: 550px;
+    height: 210vw;
+    width: 90vw;
+    /* background-color: #34a2d1; */
+  }
+  .review h2 {
+    font-family: 'sk-modern-bold';
+    font-weight: 400;
+    font-size: 25px;
+    /* background-color: #34a2d1; */
+    height: 15%;
+  }
+  .review h2::after {
+    content: '';
+    position: absolute;
+    top: 80%;
+    width: 45%;
+    height: 2px;
+    background-color: #994bfe;
+  }
+
+  .review .content > ul li img {
+    border-radius: 1.388vw;
+    width: 27.7vw;
+    height: 10.7vw;
+    display: none;
+  }
+  .review .content > ul li .contents-text {
+    /* background-color: #34a2d1; */
+    width: 100%;
+    height: 100%;
+    /* height: 13.88vw; */
+    color: #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* font-size: ; */
+    margin-bottom: 4vw;
+  }
+  .review .content > ul li .contents-text h4 {
+    color: rgb(255, 254, 244);
+    font-size: 20px;
+    font-size: 4.7vw;
+    font-family: 'sk-modern-bold';
+    margin-bottom: 1.5vw;
+  }
+  .review .content > ul li .contents-text .name {
+    margin-bottom: 3%;
+    font-size: 3.76vw;
+  }
+  .review .content > ul li .contents-text p {
+    line-height: 1.2em;
+    font-size: 12px;
+    font-size: 3vw;
+    /* word-break: keep-all; */
   }
 }
