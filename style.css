@@ -1061,7 +1061,7 @@ footer .copyright {
 
   /* PROJECT */
   .project {
-    height: 500px;
+    height: 550px;
     /* background-color: #34a2d1; */
   }
   .project .project-name {
@@ -1096,8 +1096,8 @@ footer .copyright {
     background-color: pink;
   }
   .project .swiper.down {
-    margin-top: 1.5vw;
-    display: none;
+    /* margin-top: 1.5vw; */
+    /* display: none; */
   }
   .project .swiper .swiper-wrapper {
     transition-timing-function: linear;
