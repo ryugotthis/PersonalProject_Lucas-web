@@ -1206,4 +1206,56 @@ footer .copyright {
     font-size: 3vw;
     /* word-break: keep-all; */
   }
+  /* PROCESS */
+  .process {
+    height: 270vw;
+    /* background-color: #34a2d1; */
+  }
+  .process .inner {
+    width: 90%;
+  }
+  .process h2 {
+    position: relative;
+    font-size: 25px;
+    font-size: 5.8vw;
+    font-weight: 700;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+  }
+  .process .contents {
+    /* background-color: #ba37f1; */
+    height: 75%;
+  }
+  .process .contents > ul {
+    /* background-color: pink; */
+    /* justify-content: center; */
+    display: block;
+  }
+  .process .contents > ul > li ul {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* background-color: yellowgreen; */
+  }
+  .process .contents > ul > li ul li {
+    width: 100%;
+    margin-bottom: 3vw;
+    /* background-color: #994bfe; */
+  }
+  .process .contents > ul > li ul li .num {
+    font-size: 30px;
+    font-size: 7vw;
+    font-family: 'sk-modern-bold';
+    margin-bottom: 3%;
+  }
+  .process .contents > ul > li ul li p {
+    font-size: 16px;
+    font-size: 3.76vw;
+    line-height: 1.2em;
+    /* line-height: 1.332vw; */
+  }
 }
