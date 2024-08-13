@@ -943,3 +943,32 @@ footer .copyright {
 #to-top .material-icons {
   font-size: 2vw;
 }
+
+@media screen and (max-width: 768px) {
+  header .inner {
+    width: 95%;
+    height: 56px;
+
+    /* background-color: red; */
+  }
+  header .logo {
+    left: 0;
+    margin: auto 0;
+    height: 40px;
+    width: 40px;
+    /* background-color: gold; */
+  }
+  header ul.main-menu {
+    /* background-color: pink; */
+    height: 14px;
+    bottom: 1.5em;
+  }
+  header ul.main-menu li {
+    /* padding: 0 0.2em; */
+  }
+  header ul.main-menu li .menu-name {
+    font-size: 14px;
+    margin-right: 0.2em;
+    /* padding: ; */
+  }
+}
