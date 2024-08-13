@@ -960,29 +960,57 @@ footer .copyright {
     /* background-color: red; */
   }
   header .logo {
-    position: relative;
     position: static;
     margin: 0;
     height: 50px;
     width: 50px;
-    /* background-color: gold; */
   }
   header ul.main-menu {
-    /* background-color: pink; */
-    position: relative;
     position: static;
-    /* height: 14px; */
-    /* bottom: 0; */
   }
   header ul.main-menu li .menu-name {
-    font-size: 14px;
+    font-size: 15px;
     margin: 0 0.5em;
     font-weight: 700;
-    /* padding: ; */
   }
 
   /* VISUAL */
   .visual {
     height: 400px;
+  }
+  .visual .title {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    font-size: 6vw;
+    font-family: 'sk-modern-bold';
+  }
+  .visual .title a {
+    font-size: 7vw;
+  }
+  .visual .feature {
+    position: absolute;
+    top: 22vw;
+    left: -3.47vw;
+    display: flex;
+    display: none;
+  }
+  .visual .explain {
+    position: absolute;
+    top: 26.2vw;
+    left: -3.47vw;
+    display: none;
+  }
+  .visual .btn-project {
+    position: absolute;
+    top: 32.3vw;
+    left: -3.47vw;
+    color: #111111;
+    background-color: #dbdbdb;
+    padding: 1em 1.5em;
+    border-radius: 2.5em;
+    font-family: 'sk-modern-bold';
+    font-size: 1.388vw;
+    display: none;
   }
 }
