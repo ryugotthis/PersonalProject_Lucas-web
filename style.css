@@ -1265,6 +1265,7 @@ footer .copyright {
   }
   .package h2 {
     font-size: 25px;
+    font-size: 5.88vw;
     height: 7%;
   }
   .package .inner > ul {
@@ -1306,6 +1307,7 @@ footer .copyright {
   .package .item .item-name {
     position: relative;
     font-size: 20px;
+    font-size: 4.7vw;
     font-weight: 600;
     height: 15%;
     display: flex;
@@ -1323,19 +1325,24 @@ footer .copyright {
   .package .item > ul li img {
     width: 18px;
     height: 18px;
+    width: 4.2vw;
+    height: 4.2vw;
   }
   .package .item > ul li.text div {
     font-size: 14px;
+    font-size: 3.3vw;
     /* background-color: pink; */
   }
   .package .price-box .price {
     font-size: 20px;
+    font-size: 4.7vw;
     font-weight: 700;
     margin-bottom: 1vw;
   }
   .package-btn {
     background-color: #4bc8fe;
     font-size: 15px;
+    font-size: 3.5vw;
     padding: 0.7em 1.5em;
     border-radius: 6vw;
     color: white;
