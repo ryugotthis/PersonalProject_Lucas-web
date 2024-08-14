@@ -1261,11 +1261,13 @@ footer .copyright {
 
   /* PACKAGES */
   .package {
-    height: 350vw;
+    height: 400vw;
   }
   .package h2 {
     font-size: 25px;
     font-size: 5.88vw;
+    font-size: 27px;
+    font-family: 'sk-modern-bold';
     height: 7%;
   }
   .package .inner > ul {
@@ -1276,17 +1278,19 @@ footer .copyright {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
   .package .inner > ul .item-container {
     overflow: hidden;
     position: relative;
-    width: 85%;
-    height: 32%;
+    width: 100%;
+    /* background-color: pink; */
+    height: 33%;
+    height: 900px;
     border-radius: 1px;
     font-size: 1.11vw;
     border-radius: 2.18em;
-    border-radius: 4vw;
+    border-radius: 9vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1298,7 +1302,7 @@ footer .copyright {
     height: 96%;
     position: relative;
     border-radius: 30px;
-    border-radius: 3vw;
+    border-radius: 7vw;
     background-color: WHITE;
     display: flex;
     flex-direction: column;
@@ -1316,7 +1320,7 @@ footer .copyright {
   }
   .package .item-container .item > ul {
     /* background-color: yellow; */
-    height: 55%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     padding: 7% 0;
@@ -1347,5 +1351,50 @@ footer .copyright {
     border-radius: 6vw;
     color: white;
     font-weight: 700;
+  }
+  .package .third-package-text .subtitle {
+    font-size: 13px;
+  }
+  .package .third-package-text .text-box .package-option.clicked {
+    /* font-size: 1.11vw;
+    border-radius: 20px; */
+    border-radius: 3vw;
+  }
+  .package .third-package-text .text-box .text img {
+    width: 4.2vw;
+    height: 4.2vw;
+    font-size: 1.11vw;
+    margin-left: 0.4em;
+  }
+  .package .third-package-text .text-box .text p {
+    /* display: block; */
+    font-size: 3.3vw;
+    height: 3.3vw;
+    margin-left: 0.2em;
+    /* background-color: pink; */
+  }
+  .package .estimate-price-box .estimate-price {
+    /* background-color: pink; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5vw;
+    font-weight: 700;
+  }
+  .package .estimate-price-box .estimate-price .text {
+    width: 40%;
+    /* background-color: #4bc8fe; */
+  }
+  .package .estimate-price-box .estimate-price .result {
+    font-size: 4.7vw;
+    /* background-color: palegreen; */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+  .package .estimate-price-box .package-btn {
+    /* background-color: #34a2d1; */
+    margin-top: 1.5vw;
   }
 }
