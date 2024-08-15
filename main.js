@@ -111,7 +111,7 @@ if (mql.matches) {
     slidesPerView: 1, // 한번에 보여줄 슬라이드 개수
     spaceBetween: 10,
     autoplay: true, // 자동재생
-    loop: true, // 반복재생여부
+    // loop: true, // 반복재생여부
     // speed: 150,
     pagination: {
       // 페이지 번호 사용 여부
