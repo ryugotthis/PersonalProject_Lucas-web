@@ -133,16 +133,28 @@ if (mql.matches) {
 }
 
 window.addEventListener('resize', () => {
+  if (packageSwiper) {
+    packageSwiper.destroy(); // 갱신
+  }
+
   if (mql.matches) {
     console.log('아무것도없는 스와이프', packageSwiper);
     packageMovement();
     console.log('바뀐 모바일');
+    console.log(packageSwiper);
   } else {
     if (packageSwiper) {
+      console.log('디스트로이전');
+      console.log(packageSwiper);
       packageSwiper.destroy();
+      console.log('바뀐 데스크톱입니다.');
+      console.log('mql.matches', mql.matches);
+
+      console.log(packageSwiper);
+      packageSwiper = undefined;
     }
-    // console.log('바뀐 데스크톱입니다.');
-    // console.log(packageSwiper);
+    console.log('반복 데스크톱입니다.');
+    console.log(packageSwiper);
     // packageSwiper.destroy();
     // console.log('제거되야하는스와이프', packageSwiper);
     packageSwiper = undefined;
