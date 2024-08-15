@@ -130,7 +130,7 @@ const packageGraph = document.querySelector('.package .swiper.mobile');
 const packageBtnPrev = document.querySelector('.package .swiper-prev');
 const packageBtnNext = document.querySelector('.package .swiper-next');
 let isPackageGraphClicked = false;
-packageGraph.addEventListener('click', () => {
+packageGraph.addEventListener('touchstart', () => {
   isPackageGraphClicked = !isPackageGraphClicked;
   if (isPackageGraphClicked) {
     packageBtnPrev.classList.remove('hide');
