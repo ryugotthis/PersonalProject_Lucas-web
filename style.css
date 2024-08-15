@@ -459,7 +459,7 @@ header .badges .badge {
 }
 .package .inner {
   height: inherit;
-  width: 88vw;
+  width: 90vw;
   /* z-index: 0; */
 }
 .package h2 {
@@ -472,15 +472,21 @@ header .badges .badge {
   justify-content: center;
   align-items: center;
 }
-.package .inner > ul {
-  /* position: relative; */
+.package .inner > div {
+  /* background-color: palevioletred; */
   width: 100%;
   height: 80%;
+}
+.package .inner div > ul {
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
+  /* background-color: #34a2d1; */
 }
 
-.package .inner > ul .item-container {
+.package .inner > div > ul .item-container {
   overflow: hidden;
   position: relative;
   width: 32%;
@@ -492,7 +498,7 @@ header .badges .badge {
   align-items: center;
   box-shadow: 4px 4px 10px #6666669a;
 }
-.package .inner > ul .item-container::before {
+.package .inner > div > ul .item-container::before {
   position: absolute;
   content: '';
   z-index: 0;
@@ -504,10 +510,10 @@ header .badges .badge {
   background: linear-gradient(132deg, #cbeef7, #4bc8fe 60%, #34a2d1);
   animation: spin 2.5s linear infinite;
 }
-.package .inner > ul .item-container:nth-child(2):before {
+.package .inner > div > ul .item-container:nth-child(2):before {
   background: linear-gradient(132deg, #fdefb6, #f07b32 60%, #ff8200);
 }
-.package .inner > ul .item-container:nth-child(3):before {
+.package .inner > div > ul .item-container:nth-child(3):before {
   background: linear-gradient(132deg, #eeb6ff, #ba37f1 60%, #9312a4);
 }
 
@@ -519,7 +525,7 @@ header .badges .badge {
     transform: rotate(360deg);
   }
 }
-.package .inner > ul .item-container .item {
+.package .inner > div > ul .item-container .item {
   /* padding: 0 3%; */
   width: 97%;
   height: 98%;
@@ -567,6 +573,8 @@ header .badges .badge {
 .package .item > ul li.text {
   display: flex;
   align-items: center;
+  /* background-color: yellow; */
+  padding-left: 3%;
 }
 .package .item > ul li .text div {
   font-size: 1.11vw;
@@ -710,6 +718,11 @@ header .badges .badge {
   width: 8.33vw;
   display: flex;
   justify-content: center;
+}
+.package .swiper-pagination,
+.package .swiper-prev,
+.package .swiper-next {
+  display: none;
 }
 
 /* FAQ */
@@ -980,7 +993,7 @@ footer .copyright {
     font-weight: 700;
   }
   header .badges {
-    top: 90vh;
+    top: 80vh;
     right: 3vw;
     /* background-color: pink; */
     border-radius: 1.5vw;
@@ -1261,47 +1274,50 @@ footer .copyright {
 
   /* PACKAGES */
   .package {
-    height: 400vw;
+    height: 700px;
+    height: 164.7vw;
+    position: relative;
   }
   .package h2 {
     font-size: 25px;
     font-size: 5.88vw;
-    font-size: 27px;
     font-family: 'sk-modern-bold';
-    height: 7%;
+    height: 12%;
   }
-  .package .inner > ul {
+  .package .inner > div {
+    /* background-color: palevioletred; */
+    width: 100%;
+    height: 80%;
+  }
+  .package .inner > div > ul {
     /* position: relative; */
     /* background-color: #4bc8fe; */
     width: 100%;
-    height: 90%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column; */
+    /* align-items: center; */
     /* justify-content: space-between; */
   }
-  .package .inner > ul .item-container {
+  .package .inner > div > ul .item-container {
     overflow: hidden;
     position: relative;
     width: 100%;
     /* background-color: pink; */
     height: 33%;
-    height: 900px;
-    border-radius: 1px;
-    font-size: 1.11vw;
-    border-radius: 2.18em;
+    height: 550px;
+    height: 129.4vw;
     border-radius: 9vw;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 4px 4px 10px #6666669a;
   }
-  .package .inner > ul .item-container .item {
+  .package .inner > div > ul .item-container .item {
     /* padding: 0 3%; */
     width: 94%;
     height: 96%;
     position: relative;
-    border-radius: 30px;
     border-radius: 7vw;
     background-color: WHITE;
     display: flex;
@@ -1310,8 +1326,8 @@ footer .copyright {
   }
   .package .item .item-name {
     position: relative;
-    font-size: 20px;
-    font-size: 4.7vw;
+    font-size: 23px;
+    font-size: 5.4vw;
     font-weight: 600;
     height: 15%;
     display: flex;
@@ -1327,26 +1343,26 @@ footer .copyright {
     justify-content: space-between;
   }
   .package .item > ul li img {
-    width: 18px;
-    height: 18px;
-    width: 4.2vw;
-    height: 4.2vw;
+    width: 20px;
+    height: 20px;
+    width: 4.7vw;
+    height: 4.7vw;
   }
   .package .item > ul li.text div {
-    font-size: 14px;
-    font-size: 3.3vw;
+    font-size: 15px;
+    font-size: 3.5vw;
     /* background-color: pink; */
   }
   .package .price-box .price {
-    font-size: 20px;
-    font-size: 4.7vw;
+    font-size: 22px;
+    font-size: 5.1vw;
     font-weight: 700;
     margin-bottom: 1vw;
   }
   .package-btn {
     background-color: #4bc8fe;
-    font-size: 15px;
-    font-size: 3.5vw;
+    font-size: 16px;
+    font-size: 3.76vw;
     padding: 0.7em 1.5em;
     border-radius: 6vw;
     color: white;
@@ -1354,10 +1370,9 @@ footer .copyright {
   }
   .package .third-package-text .subtitle {
     font-size: 13px;
+    font-size: 3vw;
   }
   .package .third-package-text .text-box .package-option.clicked {
-    /* font-size: 1.11vw;
-    border-radius: 20px; */
     border-radius: 3vw;
   }
   .package .third-package-text .text-box .text img {
@@ -1396,5 +1411,65 @@ footer .copyright {
   .package .estimate-price-box .package-btn {
     /* background-color: #34a2d1; */
     margin-top: 1.5vw;
+  }
+  .package .swiper-pagination,
+  .package .swiper-prev,
+  .package .swiper-next {
+    display: block;
+    position: absolute;
+  }
+  .package .swiper-pagination {
+    bottom: 40px;
+    bottom: 9.4vw;
+    /* width: 100px;
+    height: 100px; */
+    /* background-color: #cbeef7; */
+    /* z-index: 5; */
+  }
+  .package.swiper-pagination-bullet-active {
+    /* width: 16px; */
+  }
+  .package .swiper-prev,
+  .package .swiper-next {
+    width: 40px;
+    height: 40px;
+    width: 9.4vw;
+    height: 9.4vw;
+    outline: none;
+    /* border: 2px solid grey; */
+    color: grey;
+    border-radius: 50%;
+    /* Swiper Container 높이의 절반만큼 끌어올림 */
+    /* 버튼 높이의 절반만큼 추가로 끌어올림 */
+    top: 50%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d2d3d493;
+  }
+  .package .swiper-prev {
+    left: 1.5%;
+    /* margin-left: -480px; */
+  }
+  .package .swiper-next {
+    right: 1.5%;
+    /* margin-right: -480px; */
+  }
+  .package .swiper-prev .material-icons {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-size: 5.6vw;
+    padding-left: 6px;
+    padding-left: 1.4vw;
+    /* color: black; */
+  }
+  .package .swiper-prev.hide,
+  .package .swiper-next.hide {
+    display: none;
+  }
+  .package .inner > div.swiper {
+    /* background-color: yellow; */
   }
 }

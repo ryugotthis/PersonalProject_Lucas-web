@@ -95,6 +95,52 @@ reviewBtn.addEventListener('click', () => {
   }
 });
 
+// packages swiper
+// $(document).ready(() => {
+//   let ww1 = $(window).with();
+//   console.log(ww1);
+// });
+console.log('h2');
+console.log('111111', $(window).width);
+
+// console.log(window.innerWidth);
+let mql = window.matchMedia('screen and (max-width:769px)');
+if (mql.matches) {
+  console.log('모바일화면입니다.');
+  const swiper1 = new Swiper('.package .swiper.mobile', {
+    slidesPerView: 1, // 한번에 보여줄 슬라이드 개수
+    spaceBetween: 10,
+    autoplay: false, // 자동재생
+    loop: false, // 반복재생여부
+    // speed: 200,
+    pagination: {
+      // 페이지 번호 사용 여부
+      el: '.package .swiper-pagination', // 페이지 번호 요소 선택자
+      clickable: true, // 사용자의 페이지 번호 요소 제어 가능 여부
+    },
+    navigation: {
+      // 슬라이드 이전/다음 버튼 사용 여부
+      prevEl: '.package .swiper-prev', // 이전 버튼 선택자
+      nextEl: '.package .swiper-next', // 다음 버튼 선택자
+    },
+  });
+}
+
+const packageGraph = document.querySelector('.package .swiper.mobile');
+const packageBtnPrev = document.querySelector('.package .swiper-prev');
+const packageBtnNext = document.querySelector('.package .swiper-next');
+let isPackageGraphClicked = false;
+packageGraph.addEventListener('click', () => {
+  isPackageGraphClicked = !isPackageGraphClicked;
+  if (isPackageGraphClicked) {
+    packageBtnPrev.classList.remove('hide');
+    packageBtnNext.classList.remove('hide');
+  } else {
+    packageBtnPrev.classList.add('hide');
+    packageBtnNext.classList.add('hide');
+  }
+});
+
 // Create your own package calculation
 const priceTable = [
   { price: 450, status: false },
