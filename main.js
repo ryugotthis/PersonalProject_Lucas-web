@@ -110,9 +110,9 @@ if (mql.matches) {
   const swiper1 = new Swiper('.package .swiper.mobile', {
     slidesPerView: 1, // 한번에 보여줄 슬라이드 개수
     spaceBetween: 10,
-    autoplay: false, // 자동재생
-    loop: false, // 반복재생여부
-    // speed: 200,
+    autoplay: true, // 자동재생
+    loop: true, // 반복재생여부
+    // speed: 150,
     pagination: {
       // 페이지 번호 사용 여부
       el: '.package .swiper-pagination', // 페이지 번호 요소 선택자
