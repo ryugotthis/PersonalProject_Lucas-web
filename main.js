@@ -104,10 +104,53 @@ console.log('h2');
 console.log('111111', $(window).width);
 
 // console.log(window.innerWidth);
+
+// const swiper1 = new Swiper('.package .swiper.mobile', {
+//   slidesPerView: 1, // 한번에 보여줄 슬라이드 개수
+//   spaceBetween: 10,
+//   autoplay: true, // 자동재생
+//   // loop: true, // 반복재생여부
+//   // speed: 150,
+//   pagination: {
+//     // 페이지 번호 사용 여부
+//     el: '.package .swiper-pagination', // 페이지 번호 요소 선택자
+//     clickable: true, // 사용자의 페이지 번호 요소 제어 가능 여부
+//   },
+//   navigation: {
+//     // 슬라이드 이전/다음 버튼 사용 여부
+//     prevEl: '.package .swiper-prev', // 이전 버튼 선택자
+//     nextEl: '.package .swiper-next', // 다음 버튼 선택자
+//   },
+// });
+
 let mql = window.matchMedia('screen and (max-width:769px)');
+packageSwiper = undefined;
 if (mql.matches) {
   console.log('모바일화면입니다.');
-  const swiper1 = new Swiper('.package .swiper.mobile', {
+  packageMovement();
+} else {
+  console.log('데스크톱입니다.');
+}
+
+window.addEventListener('resize', () => {
+  if (mql.matches) {
+    console.log('아무것도없는 스와이프', packageSwiper);
+    packageMovement();
+    console.log('바뀐 모바일');
+  } else {
+    if (packageSwiper) {
+      packageSwiper.destroy();
+    }
+    // console.log('바뀐 데스크톱입니다.');
+    // console.log(packageSwiper);
+    // packageSwiper.destroy();
+    // console.log('제거되야하는스와이프', packageSwiper);
+    packageSwiper = undefined;
+  }
+});
+
+function packageMovement() {
+  packageSwiper = new Swiper('.package .swiper.mobile', {
     slidesPerView: 1, // 한번에 보여줄 슬라이드 개수
     spaceBetween: 10,
     autoplay: true, // 자동재생
