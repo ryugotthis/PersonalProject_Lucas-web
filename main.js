@@ -164,7 +164,7 @@ function packageMovement() {
     // loopedSlides: 1,
     // autoplay:
     // speed: 150,
-    // speed: 2000,
+    speed: 400,
     pagination: {
       // 페이지 번호 사용 여부
       el: '.package .swiper-pagination', // 페이지 번호 요소 선택자
