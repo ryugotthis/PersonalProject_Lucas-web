@@ -1389,6 +1389,7 @@ footer .copyright {
   .package .third-package-text .text-box .text:hover {
     border-color: none;
     border-radius: none;
+    border: none;
   }
   .package .third-package-text .text-box .text img {
     width: 4.2vw;
