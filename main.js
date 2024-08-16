@@ -222,8 +222,6 @@ let packagePriceResult = 0;
 const priceResult = document.querySelector('.estimate-price-box .result');
 packageOptionEls.forEach((el, index) => {
   el.addEventListener('click', () => {
-    packageBtnPrev.classList.add('hide');
-    packageBtnNext.classList.add('hide');
     priceTable[index].status = !priceTable[index].status;
     console.log('statue', priceTable[index].status);
     if (priceTable[index].status) {

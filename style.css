@@ -1322,10 +1322,10 @@ footer .copyright {
     box-shadow: 4px 4px 10px #6666669a;
   }
 
-  .package .inner > div > ul .item-container.swiper-slide {
+  /* .package .inner > div > ul .item-container.swiper-slide {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0);
-  }
+  } */
 
   .package .inner > div > ul .item-container .item {
     /* z-index: -1; */
