@@ -1095,6 +1095,7 @@ footer .copyright {
     font-weight: 400;
     position: relative;
     font-size: 25px;
+    font-size: 5.88vw;
     height: 20%;
   }
   .project .project-name::after {
@@ -1104,6 +1105,7 @@ footer .copyright {
     top: 70%;
     font-weight: 400;
     font-size: 16px;
+    font-size: 3.76vw;
     margin: 0.5vw 0;
   }
   .project .swiper {
@@ -1172,6 +1174,7 @@ footer .copyright {
     font-family: 'sk-modern-bold';
     font-weight: 400;
     font-size: 25px;
+    font-size: 5.88vw;
     /* background-color: #34a2d1; */
     height: 15%;
   }
