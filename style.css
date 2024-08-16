@@ -1520,6 +1520,9 @@ footer .copyright {
   }
 
   /* CONTACT */
+  .contact .inner {
+    width: 90%;
+  }
   .contact h2 {
     font-size: 25px;
     font-size: 5.88vw;
@@ -1637,13 +1640,13 @@ footer .copyright {
     right: 3vw;
     z-index: 9;
     left: 50%;
-    margin-left: -2.5vw;
-    width: 5vw;
-    height: 5vw;
+    margin-left: -4vw;
+    width: 8vw;
+    height: 8vw;
     background-color: #33333361;
     border-radius: 50%;
   }
   #to-top .material-icons {
-    font-size: 4vw;
+    font-size: 6vw;
   }
 }
