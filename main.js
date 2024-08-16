@@ -178,20 +178,35 @@ function packageMovement() {
     },
   });
 }
-
-const packageGraph = document.querySelector('.package .swiper.mobile');
 const packageBtnPrev = document.querySelector('.package .swiper-prev');
 const packageBtnNext = document.querySelector('.package .swiper-next');
-let isPackageGraphClicked = false;
+packageSwiper.on('transitionEnd', () => {
+  console.log('now index :::', packageSwiper.realIndex);
+  if (packageSwiper.realIndex == 0) {
+    packageBtnPrev.classList.add('hide');
+  } else if (packageSwiper.realIndex == 2) {
+    packageBtnNext.classList.add('hide');
+  } else {
+    packageBtnPrev.classList.remove('hide');
+    packageBtnNext.classList.remove('hide');
+  }
+});
+
+// console.log('dsd', packageSwiper.navigation);
+// const packageGraph = document.querySelector('.package .swiper.mobile');
+// const packageBtnPrev = document.querySelector('.package .swiper-prev');
+// const packageBtnNext = document.querySelector('.package .swiper-next');
+// let isPackageGraphClicked = false;
 // packageGraph.addEventListener('touchstart', () => {
 //   isPackageGraphClicked = !isPackageGraphClicked;
-//   if (isPackageGraphClicked) {
-//     packageBtnPrev.classList.add('hide');
-//     packageBtnNext.classList.add('hide');
-//   } else {
-//     packageBtnPrev.classList.remove('hide');
-//     packageBtnNext.classList.remove('hide');
-//   }
+//   // if (isPackageGraphClicked) {
+//   //   packageBtnPrev.classList.add('hide');
+//   //   packageBtnNext.classList.add('hide');
+//   // } else {
+//   //   packageBtnPrev.classList.remove('hide');
+//   //   packageBtnNext.classList.remove('hide');
+//   // }
+//   console.log(packageSwiper);
 // });
 
 // Create your own package calculation
