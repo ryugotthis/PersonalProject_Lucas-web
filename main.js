@@ -159,6 +159,7 @@ function packageMovement() {
     //   // pauseOnMouseEnter: true,
     // },
     autoplay: false,
+    delay: 0,
     // stopOnLastSlide: false,
     // loop: true, // 반복재생여부
     // loopedSlides: 1,
