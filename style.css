@@ -1294,7 +1294,7 @@ footer .copyright {
   }
   .package .inner > div {
     /* background-color: palevioletred; */
-    width: 100%;
+    width: 90%;
     height: 80%;
   }
   .package .inner > div > ul {
@@ -1310,8 +1310,9 @@ footer .copyright {
   .package .inner > div > ul .item-container {
     overflow: hidden;
     position: relative;
-    width: 100%;
-    /* background-color: pink; */
+    /* width: 60%; */
+    /* width: 300px; */
+    background-color: pink;
     height: 33%;
     height: 550px;
     height: 129.4vw;

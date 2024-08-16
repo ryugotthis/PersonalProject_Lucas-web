@@ -183,16 +183,16 @@ const packageGraph = document.querySelector('.package .swiper.mobile');
 const packageBtnPrev = document.querySelector('.package .swiper-prev');
 const packageBtnNext = document.querySelector('.package .swiper-next');
 let isPackageGraphClicked = false;
-packageGraph.addEventListener('touchstart', () => {
-  isPackageGraphClicked = !isPackageGraphClicked;
-  if (isPackageGraphClicked) {
-    packageBtnPrev.classList.add('hide');
-    packageBtnNext.classList.add('hide');
-  } else {
-    packageBtnPrev.classList.remove('hide');
-    packageBtnNext.classList.remove('hide');
-  }
-});
+// packageGraph.addEventListener('touchstart', () => {
+//   isPackageGraphClicked = !isPackageGraphClicked;
+//   if (isPackageGraphClicked) {
+//     packageBtnPrev.classList.add('hide');
+//     packageBtnNext.classList.add('hide');
+//   } else {
+//     packageBtnPrev.classList.remove('hide');
+//     packageBtnNext.classList.remove('hide');
+//   }
+// });
 
 // Create your own package calculation
 const priceTable = [
