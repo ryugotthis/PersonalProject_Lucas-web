@@ -674,7 +674,7 @@ header .badges .badge {
   margin-bottom: 3px;
   margin-bottom: 0.18em;
   border: 2px solid white;
-  z-index: 5;
+
   background-color: #34a2d1;
 }
 .package .third-package-text .text-box .text:hover {
@@ -1328,6 +1328,7 @@ footer .copyright {
   }
 
   .package .inner > div > ul .item-container .item {
+    z-index: -1;
     /* padding: 0 3%; */
     width: 94%;
     height: 96%;
@@ -1386,6 +1387,9 @@ footer .copyright {
   .package .third-package-text .subtitle {
     font-size: 13px;
     font-size: 3vw;
+  }
+  .package .third-package-text .text-box .text {
+    z-index: 5;
   }
   .package .third-package-text .text-box .package-option.clicked {
     border-radius: 4vw;
