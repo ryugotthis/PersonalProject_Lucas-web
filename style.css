@@ -1335,7 +1335,7 @@ footer .copyright {
     position: relative;
     border-radius: 7vw;
     background-color: WHITE;
-    background-color: pink;
+    /* background-color: pink; */
     display: flex;
     flex-direction: column;
     align-items: center;
