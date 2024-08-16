@@ -1387,7 +1387,8 @@ footer .copyright {
     border-radius: 4vw;
   }
   .package .third-package-text .text-box .text:hover {
-    border-color: white;
+    /* border-color: white; */
+    background-color: #9312a4;
   }
   .package .third-package-text .text-box .text img {
     width: 4.2vw;
