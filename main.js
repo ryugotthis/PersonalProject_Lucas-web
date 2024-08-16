@@ -2,7 +2,7 @@ const fadeEls = document.querySelectorAll('.visual .fade-in');
 console.log(fadeEls);
 fadeEls.forEach((fadeEl, index) => {
   gsap.to(fadeEl, 1, {
-    delay: (index + 1) * 0.7, //0.7초 1.4초 2.1초 2.7초 순으로 나타남
+    delay: (index + 1) * 0.4, //0.7초 1.4초 2.1초 2.7초 순으로 나타남
     opacity: 1,
   });
 });
