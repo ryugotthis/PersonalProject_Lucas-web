@@ -155,7 +155,7 @@ function packageMovement() {
     // touchRatio: 0,
     autoplay: {
       // 자동 재생 여부
-      delay: 500, // 5초마다 슬라이드 바뀜
+      delay: 0, // 5초마다 슬라이드 바뀜
       // pauseOnMouseEnter: true,
     },
     // stopOnLastSlide: false,
