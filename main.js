@@ -155,12 +155,13 @@ function packageMovement() {
     touchRatio: 0,
     autoplay: {
       // 자동 재생 여부
-      delay: 2000, // 5초마다 슬라이드 바뀜
+      delay: 1000, // 5초마다 슬라이드 바뀜
     },
     // loop: true, // 반복재생여부
     // loopedSlides: 1,
     // autoplay:
     // speed: 150,
+    speed: 2500,
     pagination: {
       // 페이지 번호 사용 여부
       el: '.package .swiper-pagination', // 페이지 번호 요소 선택자
