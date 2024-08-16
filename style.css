@@ -1386,6 +1386,11 @@ footer .copyright {
   .package .third-package-text .text-box .package-option.clicked {
     border-radius: 4vw;
   }
+  .package .third-package-text .text-box .text:hover {
+    border-color: #994bfe;
+    border-radius: 4vw;
+    cursor: pointer;
+  }
   .package .third-package-text .text-box .text img {
     width: 4.2vw;
     height: 4.2vw;
