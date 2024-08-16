@@ -153,17 +153,18 @@ function packageMovement() {
     slidesPerView: 1, // 한번에 보여줄 슬라이드 개수
     spaceBetween: 30,
     // touchRatio: 0,
-    autoplay: {
-      // 자동 재생 여부
-      delay: 0, // 5초마다 슬라이드 바뀜
-      // pauseOnMouseEnter: true,
-    },
+    // autoplay: {
+    //   // 자동 재생 여부
+    //   delay: 0, // 5초마다 슬라이드 바뀜
+    //   // pauseOnMouseEnter: true,
+    // },
+    autoplay: false,
     // stopOnLastSlide: false,
     // loop: true, // 반복재생여부
     // loopedSlides: 1,
     // autoplay:
     // speed: 150,
-    speed: 5000,
+    // speed: 2000,
     pagination: {
       // 페이지 번호 사용 여부
       el: '.package .swiper-pagination', // 페이지 번호 요소 선택자
