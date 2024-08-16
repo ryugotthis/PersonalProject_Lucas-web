@@ -186,11 +186,11 @@ let isPackageGraphClicked = false;
 packageGraph.addEventListener('touchstart', () => {
   isPackageGraphClicked = !isPackageGraphClicked;
   if (isPackageGraphClicked) {
-    packageBtnPrev.classList.remove('hide');
-    packageBtnNext.classList.remove('hide');
-  } else {
     packageBtnPrev.classList.add('hide');
     packageBtnNext.classList.add('hide');
+  } else {
+    packageBtnPrev.classList.remove('hide');
+    packageBtnNext.classList.remove('hide');
   }
 });
 
@@ -222,6 +222,8 @@ let packagePriceResult = 0;
 const priceResult = document.querySelector('.estimate-price-box .result');
 packageOptionEls.forEach((el, index) => {
   el.addEventListener('click', () => {
+    packageBtnPrev.classList.add('hide');
+    packageBtnNext.classList.add('hide');
     priceTable[index].status = !priceTable[index].status;
     console.log('statue', priceTable[index].status);
     if (priceTable[index].status) {
