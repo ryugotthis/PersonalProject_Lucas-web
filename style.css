@@ -1473,10 +1473,12 @@ footer .copyright {
     background-color: #d2d3d493;
   }
   .package .swiper-prev {
+    /* display: block; */
     left: 1.5%;
     /* margin-left: -480px; */
   }
   .package .swiper-next {
+    /* display: inline-block; */
     right: 1.5%;
     /* margin-right: -480px; */
   }
@@ -1491,7 +1493,7 @@ footer .copyright {
   }
   .package .swiper-prev.hide,
   .package .swiper-next.hide {
-    display: none;
+    opacity: 0;
   }
   /*FAQ */
   .faq {
