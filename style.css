@@ -455,6 +455,7 @@ header .badges .badge {
   width: 100%;
   height: 55.5vw;
   background-color: rgb(241, 241, 237);
+  background-color: pink;
   /* z-index: -2; */
 }
 .package .inner {
@@ -515,6 +516,7 @@ header .badges .badge {
 }
 .package .inner > div > ul .item-container:nth-child(3):before {
   background: linear-gradient(132deg, #eeb6ff, #ba37f1 60%, #9312a4);
+  background: linear-gradient(132deg, #eeb6ff21, #b937f125 60%, #9312a41e);
 }
 
 @keyframes spin {
