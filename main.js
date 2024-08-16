@@ -152,7 +152,7 @@ function packageMovement() {
   packageSwiper = new Swiper('.package .swiper.mobile', {
     slidesPerView: 1, // 한번에 보여줄 슬라이드 개수
     spaceBetween: 30,
-    touchRatio: 0,
+    // touchRatio: 0,
     autoplay: {
       // 자동 재생 여부
       delay: 500, // 5초마다 슬라이드 바뀜
