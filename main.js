@@ -182,6 +182,8 @@ const packageBtnPrev = document.querySelector('.package .swiper-prev');
 const packageBtnNext = document.querySelector('.package .swiper-next');
 packageSwiper.on('transitionEnd', () => {
   console.log('now index :::', packageSwiper.realIndex);
+  console.log('prev', packageBtnPrev.classList);
+  console.log('next', packageBtnNext.classList);
   if (packageSwiper.realIndex == 0) {
     packageBtnPrev.classList.add('hide');
   } else if (packageSwiper.realIndex == 2) {
