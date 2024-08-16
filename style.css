@@ -502,7 +502,7 @@ header .badges .badge {
 .package .inner > div > ul .item-container::before {
   position: absolute;
   content: '';
-  z-index: 0;
+  z-index: -1;
   top: -13%;
   left: -45%;
   width: 195%;
