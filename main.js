@@ -156,6 +156,7 @@ function packageMovement() {
     autoplay: {
       // 자동 재생 여부
       delay: 500, // 5초마다 슬라이드 바뀜
+      // pauseOnMouseEnter: true,
     },
     // stopOnLastSlide: false,
     // loop: true, // 반복재생여부
