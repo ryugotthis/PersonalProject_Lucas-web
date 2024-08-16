@@ -675,7 +675,7 @@ header .badges .badge {
   margin-bottom: 0.18em;
   border: 2px solid white;
 
-  background-color: #34a2d1;
+  /* background-color: #34a2d1; */
 }
 .package .third-package-text .text-box .text:hover {
   border-color: #994bfe;
