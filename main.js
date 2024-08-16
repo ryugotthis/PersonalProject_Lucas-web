@@ -133,30 +133,17 @@ if (mql.matches) {
 }
 
 window.addEventListener('resize', () => {
+  // 갱신
   if (packageSwiper) {
-    packageSwiper.destroy(); // 갱신
+    packageSwiper.destroy();
   }
-
   if (mql.matches) {
-    console.log('아무것도없는 스와이프', packageSwiper);
     packageMovement();
-    console.log('바뀐 모바일');
-    console.log(packageSwiper);
   } else {
     if (packageSwiper) {
-      console.log('디스트로이전');
-      console.log(packageSwiper);
       packageSwiper.destroy();
-      console.log('바뀐 데스크톱입니다.');
-      console.log('mql.matches', mql.matches);
-
-      console.log(packageSwiper);
       packageSwiper = undefined;
     }
-    console.log('반복 데스크톱입니다.');
-    console.log(packageSwiper);
-    // packageSwiper.destroy();
-    // console.log('제거되야하는스와이프', packageSwiper);
     packageSwiper = undefined;
   }
 });
@@ -164,9 +151,15 @@ window.addEventListener('resize', () => {
 function packageMovement() {
   packageSwiper = new Swiper('.package .swiper.mobile', {
     slidesPerView: 1, // 한번에 보여줄 슬라이드 개수
-    spaceBetween: 10,
-    autoplay: true, // 자동재생
+    spaceBetween: 30,
+    touchRatio: 0,
+    autoplay: {
+      // 자동 재생 여부
+      delay: 2000, // 5초마다 슬라이드 바뀜
+    },
     // loop: true, // 반복재생여부
+    // loopedSlides: 1,
+    // autoplay:
     // speed: 150,
     pagination: {
       // 페이지 번호 사용 여부

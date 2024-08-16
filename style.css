@@ -1433,8 +1433,8 @@ footer .copyright {
   .package .swiper-next {
     width: 40px;
     height: 40px;
-    width: 9.4vw;
-    height: 9.4vw;
+    width: 10vw;
+    height: 10vw;
     outline: none;
     /* border: 2px solid grey; */
     color: grey;
@@ -1469,7 +1469,181 @@ footer .copyright {
   .package .swiper-next.hide {
     display: none;
   }
-  .package .inner > div.swiper {
+  /*FAQ */
+  .faq {
+    margin: 7vw 0;
+  }
+  .faq .inner {
+    width: 85%;
+  }
+  .faq h2 {
+    font-size: 25px;
+    font-size: 5.88vw;
+  }
+  .faq h2::after {
+    width: 10%;
+  }
+  .faq .faq-container {
+    margin-top: 7vw;
     /* background-color: yellow; */
+  }
+  .faq .faq-container .question-box {
+    width: 350px;
+    width: 82vw;
+    /* background-color: pink; */
+  }
+  .faq .faq-container .question-box .question {
+    /* width: 100%; */
+    font-size: 13px;
+    font-size: 3vw;
+    padding: 1em 1em 1em 2.5em;
+    /* padding: 1.11vw 1.11vw 1.11vw 2.7vw; */
+    display: flex;
+    align-items: center;
+    border: 3px solid grey;
+    border-radius: 0.62em;
+    margin-bottom: 0.5em;
+  }
+  .faq .faq-container .question .text {
+    font-size: 13px;
+    font-size: 3vw;
+    font-weight: 700;
+    flex-grow: 1;
+  }
+  .faq .faq-container .question .material-icons {
+    font-size: 22px;
+    font-size: 5.5vw;
+  }
+  .faq .faq-container .answer {
+    font-size: 11px;
+    font-size: 2.58vw;
+  }
+
+  /* CONTACT */
+  .contact h2 {
+    font-size: 25px;
+    font-size: 5.88vw;
+  }
+  .contact h2::after {
+    top: 150%;
+    width: 15%;
+  }
+  .contact .contact-box {
+    height: 300px;
+    height: 70.5vw;
+    padding: 8vw 0 3vw 0;
+  }
+  .contact .contact-box input {
+    font-size: 11px;
+    font-size: 2.58vw;
+  }
+  .contact .contact-box .message {
+    font-size: 11px;
+    font-size: 2.58vw;
+    /* padding: 1em 1em; */
+  }
+  .contact .contact-btn-box .contact-btn {
+    font-size: 13px;
+    font-size: 3vw;
+    border-radius: 5vw;
+    font-family: 'sk-modern-bold';
+    padding: 0.7em 1.5em;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 2vw 0;
+    position: relative;
+  }
+  footer .inner {
+    height: 80px;
+    height: 18.8vw;
+    width: 85%;
+    /* background-color: yellow; */
+    /* height: 100%; */
+  }
+  footer img {
+    width: 3.5vw;
+    height: 3.5vw;
+  }
+  footer .info {
+    height: 80%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 11px;
+    font-size: 2.58vw;
+  }
+  footer .left {
+    /* background-color: yellowgreen; */
+  }
+  footer .left .logo-name img {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  footer .left .time .material-icons {
+    font-size: 4vw;
+    margin: 0 0.5vw 0 0.5vw;
+  }
+  footer .right .link1 {
+    position: absolute;
+    /* margin-right: 1em; */
+    width: 13vw;
+    height: 4vw;
+    /* background-color: #994bfe; */
+    top: 6px;
+    left: 5px;
+    top: 1.4vw;
+    left: 1.17vw;
+  }
+  /* footer .right .link1 a {
+    margin-right: 1em;
+  } */
+  footer .right .link2 {
+    /* background-color: yellowgreen; */
+  }
+  footer .right .link2 .email {
+    color: white;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+  }
+  footer .right .link2 .phone {
+    height: 4vw;
+    display: flex;
+    align-items: center;
+  }
+  footer .copyright {
+    position: absolute;
+    bottom: 10px;
+    bottom: 2.365vw;
+    /* margin-bottom: 0.5em; */
+    display: flex;
+    align-items: center;
+    /* background-color: yellowgreen; */
+    /* width: 80%; */
+    font-size: 11px;
+    font-size: 2.58vw;
+    padding-left: 1vw;
+  }
+
+  /* TO Top BUTTON */
+  #to-top {
+    position: fixed;
+    bottom: 2vw;
+    right: 3vw;
+    z-index: 9;
+    left: 50%;
+    margin-left: -2.5vw;
+    width: 5vw;
+    height: 5vw;
+    background-color: #33333361;
+    border-radius: 50%;
+  }
+  #to-top .material-icons {
+    font-size: 4vw;
   }
 }
