@@ -1,5 +1,7 @@
+'use strict';
+// visual part - fade in
 const fadeEls = document.querySelectorAll('.visual .fade-in');
-console.log(fadeEls);
+// console.log(fadeEls);
 fadeEls.forEach((fadeEl, index) => {
   gsap.to(fadeEl, 1, {
     delay: (index + 1) * 0.5, //0.7초 1.4초 2.1초 2.7초 순으로 나타남
@@ -7,22 +9,7 @@ fadeEls.forEach((fadeEl, index) => {
   });
 });
 
-// $('.project .swiper').each(function (index) {
-//   let t = $(this);
-//   t.addClass('swiepr-' + index);
-
-//   let swiper = new Swiper(t, {
-//     autoplay: {
-//       delay: 0, //add
-//       disableOnInteraction: false,
-//     },
-//     speed: 5000,
-//     loop: true,
-//     loopAdditionalSlides: 1,
-//     slidesPerView: 5,
-//   });
-// });
-
+// project part - swiper
 const swiper = new Swiper('.project .swiper', {
   slidesPerView: 1, // 한번에 보여줄 슬라이드 개수
   spaceBetween: 10,
@@ -45,22 +32,9 @@ const swiper = new Swiper('.project .swiper', {
       speed: 4000,
     },
   },
-  // direction: 'horizental' 기본값이라 생략
-
-  //
 });
 
-// const slideEls = document.querySelectorAll('.project .swiper-slide');
-// slideEls.forEach((element) => {
-//   element.addEventListener('mouseover', () => {
-//     swiper[0].autoplay.stop();
-//     console.log('in');
-//   });
-//   element.addEventListener('mouseout', () => {
-//     swiper[0].autoplay.start();
-//     console.log('out');
-//   });
-// });
+// project part - pause on mouseover
 $('.swiper.up .swiper-slide').on('mouseover', function () {
   console.log('hi');
   swiper[0].autoplay.stop();
@@ -76,7 +50,7 @@ $('.swiper.down .swiper-slide').on('mouseout', function () {
   swiper[1].autoplay.start();
 });
 
-// review button
+// project part - review button
 const reviewBtn = document.querySelector('.review-btn');
 let isReview = false;
 const reviewEl = document.querySelector('.review');
@@ -95,36 +69,9 @@ reviewBtn.addEventListener('click', () => {
   }
 });
 
-// packages swiper
-// $(document).ready(() => {
-//   let ww1 = $(window).with();
-//   console.log(ww1);
-// });
-console.log('h2');
-console.log('111111', $(window).width);
-
-// console.log(window.innerWidth);
-
-// const swiper1 = new Swiper('.package .swiper.mobile', {
-//   slidesPerView: 1, // 한번에 보여줄 슬라이드 개수
-//   spaceBetween: 10,
-//   autoplay: true, // 자동재생
-//   // loop: true, // 반복재생여부
-//   // speed: 150,
-//   pagination: {
-//     // 페이지 번호 사용 여부
-//     el: '.package .swiper-pagination', // 페이지 번호 요소 선택자
-//     clickable: true, // 사용자의 페이지 번호 요소 제어 가능 여부
-//   },
-//   navigation: {
-//     // 슬라이드 이전/다음 버튼 사용 여부
-//     prevEl: '.package .swiper-prev', // 이전 버튼 선택자
-//     nextEl: '.package .swiper-next', // 다음 버튼 선택자
-//   },
-// });
-
+// mobile & pc display control
 let mql = window.matchMedia('screen and (max-width:769px)');
-packageSwiper = undefined;
+let packageSwiper = undefined;
 if (mql.matches) {
   console.log('모바일화면입니다.');
   packageMovement();
@@ -152,19 +99,8 @@ function packageMovement() {
   packageSwiper = new Swiper('.package .swiper.mobile', {
     slidesPerView: 1, // 한번에 보여줄 슬라이드 개수
     spaceBetween: 30,
-    // touchRatio: 0,
-    // autoplay: {
-    //   // 자동 재생 여부
-    //   delay: 0, // 5초마다 슬라이드 바뀜
-    //   // pauseOnMouseEnter: true,
-    // },
     autoplay: false,
     delay: 0,
-    // stopOnLastSlide: false,
-    // loop: true, // 반복재생여부
-    // loopedSlides: 1,
-    // autoplay:
-    // speed: 150,
     speed: 400,
     pagination: {
       // 페이지 번호 사용 여부
@@ -178,41 +114,8 @@ function packageMovement() {
     },
   });
 }
-// const packageBtnPrev = document.querySelector('.package .swiper-prev');
-// const packageBtnNext = document.querySelector('.package .swiper-next');
-// packageSwiper.on('transitionEnd', () => {
-//   console.log('now index :::', packageSwiper.realIndex);
 
-//   if (packageSwiper.realIndex == 0) {
-//     packageBtnPrev.classList.add('hide');
-//   } else if (packageSwiper.realIndex == 2) {
-//     packageBtnNext.classList.add('hide');
-//   } else {
-//     packageBtnPrev.classList.remove('hide');
-//     packageBtnNext.classList.remove('hide');
-//   }
-//   console.log('prev', packageBtnPrev.classList);
-//   console.log('next', packageBtnNext.classList);
-// });
-
-// console.log('dsd', packageSwiper.navigation);
-// const packageGraph = document.querySelector('.package .swiper.mobile');
-// const packageBtnPrev = document.querySelector('.package .swiper-prev');
-// const packageBtnNext = document.querySelector('.package .swiper-next');
-// let isPackageGraphClicked = false;
-// packageGraph.addEventListener('touchstart', () => {
-//   isPackageGraphClicked = !isPackageGraphClicked;
-//   // if (isPackageGraphClicked) {
-//   //   packageBtnPrev.classList.add('hide');
-//   //   packageBtnNext.classList.add('hide');
-//   // } else {
-//   //   packageBtnPrev.classList.remove('hide');
-//   //   packageBtnNext.classList.remove('hide');
-//   // }
-//   console.log(packageSwiper);
-// });
-
-// Create your own package calculation
+// packages part - Create your own package calculation
 const priceTable = [
   { price: 450, status: false },
   { price: 320, status: false },
@@ -255,7 +158,7 @@ packageOptionEls.forEach((el, index) => {
   });
 });
 
-// FAQ
+// FAQ part - answer display on click
 const questionEls = document.querySelectorAll('.faq .question');
 const answerEls = document.querySelectorAll('.faq .answer');
 const questionElsStatus = [false, false, false, false];
@@ -273,6 +176,7 @@ questionEls.forEach((el, index) => {
   });
 });
 
+// header - movement on click in menu
 const menuProject = document.getElementById('menuProject');
 const menuProcess = document.getElementById('menuProcess');
 const menuPackage = document.getElementById('menuPackage');
@@ -308,11 +212,9 @@ recentProjectBtn.addEventListener('click', () => {
   });
 });
 
-// // badge % to top
+// badge % to top
 const badgeEl = document.querySelector('.badges');
 const totopEl = document.getElementById('to-top');
-console.log('totop', totopEl);
-// const projectEl = document.querySelector('.project');
 const faqEl = document.querySelector('.faq');
 console.log(window.pageYOffset + contactEl.getBoundingClientRect().top);
 window.addEventListener(
