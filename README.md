@@ -4,7 +4,8 @@
 
 ## 🔗 데모
 
-👉 [실제 사이트 보기](#) (https://ryucandoit-lucas-provost.netlify.app/)
+🌐 [데모 사이트 바로가기](https://ryucandoit-lucas-provost.netlify.app/)
+![대표이미지](./images/lucas_representative.png)
 
 ---
 
