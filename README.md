@@ -32,6 +32,12 @@
 
 ## 📷 Screenshots
 
+![PC](./images/readme/pc_demo.gif)
+
 #### 태블릿
 
+![태블릿](./images/readme/tablet_demo.gif)
+
 #### 모바일
+
+![모바일](./images/readme/mobile_demo.gif)
