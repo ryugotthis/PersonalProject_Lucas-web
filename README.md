@@ -2,9 +2,8 @@
 
 그래픽 디자이너 Lucas Provost의 포트폴리오 웹사이트입니다. 브랜드 디자인 전문성을 강조하고, 프로젝트 사례, 서비스 패키지, 고객 리뷰 등을 사용자 친화적인 UI로 소개합니다.
 
-## 🔗 데모
+## 🌐 [데모 사이트 바로가기](https://ryucandoit-lucas-provost.netlify.app/)
 
-🌐 [데모 사이트 바로가기](https://ryucandoit-lucas-provost.netlify.app/)
 ![대표이미지](./images/readme/lucas_representative.png)
 
 ---
@@ -30,3 +29,9 @@
 - **Lodash** – scroll throttle
 - **jQuery** – 마우스 이벤트 제어
 - **Reset.css / Google Fonts / Font Awesome**
+
+## 📷 Screenshots
+
+#### 태블릿
+
+#### 모바일
